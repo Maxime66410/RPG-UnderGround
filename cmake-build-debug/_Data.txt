@@ -1,0 +1,10 @@
+Max
+150
+0
+archer
+Humain
+Chomeur
+Sans Arme
+50
+0
+0

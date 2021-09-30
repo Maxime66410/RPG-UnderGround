@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Projet JetBrain/CLion/RPGUnderGround/Fonctions/magasin.cpp
+../Header/magasin.h
+D:/Projet JetBrain/CLion/RPGUnderGround/Header/magasin.h
+
+D:/Projet JetBrain/CLion/RPGUnderGround/Header/magasin.h
+

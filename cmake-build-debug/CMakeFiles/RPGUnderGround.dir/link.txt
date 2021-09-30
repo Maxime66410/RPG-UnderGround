@@ -1,0 +1,3 @@
+"D:\Programme\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\RPGUnderGround.dir/objects.a
+D:\Programme\WinMG\bin\ar.exe cr CMakeFiles\RPGUnderGround.dir/objects.a @CMakeFiles\RPGUnderGround.dir\objects1.rsp
+D:\Programme\WinMG\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\RPGUnderGround.dir/objects.a -Wl,--no-whole-archive -o RPGUnderGround.exe -Wl,--out-implib,libRPGUnderGround.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\RPGUnderGround.dir\linklibs.rsp

@@ -1,6 +1,7 @@
 #include "../Header/navigation.h"
 #include "../Header/sauvegarder.h"
 #include "../Header/magasin.h"
+#include "../Header/combat.h"
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -26,10 +27,11 @@ string tempFonctions = "";   // variable temporaire pour la Fonctions du héros
 string tempArme = "";   // variable temporaire pour l'arme du héros
 int tempForce = 0;   // variable temporaire pour la force du héros
 int tempExp = 0;   // variable temporaire pour le expérience du héros
-int tempTour = 0;   // variable temporaire pour le tour 
+int tempTour = 0;   // variable temporaire pour le tour
 
 sauvegarder LaSauvegarder;
 magasin LeMagasin;
+combat LeCombat;
 
 string navigation::ChargerLaSauvegarde()
 {
@@ -121,7 +123,8 @@ void navigation::MenuNavigation()
 
     if(Choix == "Combat" || Choix == "combat")
     {
-        cout << "COMBAT GO !";
+        system("cls");
+        LeCombat.Game();
     }
     else if (Choix == "Shop" || Choix == "shop")
     {

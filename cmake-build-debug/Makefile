@@ -128,6 +128,30 @@ RPGUnderGround/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGUnderGround.dir\build.make CMakeFiles/RPGUnderGround.dir/build
 .PHONY : RPGUnderGround/fast
 
+Fonctions/combat.obj: Fonctions/combat.cpp.obj
+.PHONY : Fonctions/combat.obj
+
+# target to build an object file
+Fonctions/combat.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGUnderGround.dir\build.make CMakeFiles/RPGUnderGround.dir/Fonctions/combat.cpp.obj
+.PHONY : Fonctions/combat.cpp.obj
+
+Fonctions/combat.i: Fonctions/combat.cpp.i
+.PHONY : Fonctions/combat.i
+
+# target to preprocess a source file
+Fonctions/combat.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGUnderGround.dir\build.make CMakeFiles/RPGUnderGround.dir/Fonctions/combat.cpp.i
+.PHONY : Fonctions/combat.cpp.i
+
+Fonctions/combat.s: Fonctions/combat.cpp.s
+.PHONY : Fonctions/combat.s
+
+# target to generate assembly for a file
+Fonctions/combat.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGUnderGround.dir\build.make CMakeFiles/RPGUnderGround.dir/Fonctions/combat.cpp.s
+.PHONY : Fonctions/combat.cpp.s
+
 Fonctions/heros.obj: Fonctions/heros.cpp.obj
 .PHONY : Fonctions/heros.obj
 
@@ -281,6 +305,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... RPGUnderGround
+	@echo ... Fonctions/combat.obj
+	@echo ... Fonctions/combat.i
+	@echo ... Fonctions/combat.s
 	@echo ... Fonctions/heros.obj
 	@echo ... Fonctions/heros.i
 	@echo ... Fonctions/heros.s

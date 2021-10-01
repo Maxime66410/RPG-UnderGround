@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Projet JetBrain/CLion/RPGUnderGround/Fonctions/combat.cpp">
+			<Option target="RPGUnderGround"/>
+		</Unit>
 		<Unit filename="D:/Projet JetBrain/CLion/RPGUnderGround/Fonctions/heros.cpp">
 			<Option target="RPGUnderGround"/>
 		</Unit>
@@ -98,6 +101,9 @@
 			<Option target="RPGUnderGround"/>
 		</Unit>
 		<Unit filename="D:/Projet JetBrain/CLion/RPGUnderGround/Header">
+			<Option target="RPGUnderGround"/>
+		</Unit>
+		<Unit filename="D:/Projet JetBrain/CLion/RPGUnderGround/Header/combat.h">
 			<Option target="RPGUnderGround"/>
 		</Unit>
 		<Unit filename="D:/Projet JetBrain/CLion/RPGUnderGround/Header/heros.h">

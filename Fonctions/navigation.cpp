@@ -1,5 +1,6 @@
 #include "../Header/navigation.h"
 #include "../Header/sauvegarder.h"
+#include "../Header/magasin.h"
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -10,27 +11,31 @@ using namespace std;
 string BaseSet = "**********************************************************";
 string BaseSet2 = "*                                                        *";
 
-string const NomFichier("_Data.txt");
-ifstream Fichier(NomFichier.c_str());
+string const NomFichier("_Data.txt");   // prise en charge du fichier data
+ifstream Fichier;
 
-string const NomfichierTour("_Tour.txt");
-ifstream FichierTour(NomfichierTour.c_str());
+string const NomfichierTour("_Tour.txt"); // prise en charge du fichier tour
+ifstream FichierTour;
 
-string tempNomheros = "";
-int tempVieHeros = 0;
-int tempMonnaie = 0;
-string tempClasse = "";
-string tempEspece = "";
-string tempFonctions = "";
-string tempArme = "";
-int tempForce = 0;
-int tempExp = 0;
-int tempTour = 0;
+string tempNomheros = ""; // variable temporaire pour le nom du héros
+int tempVieHeros = 0;   // variable temporaire pour la vie du Héros
+int tempMonnaie = 0;   // variable temporaire pour la Monnaie
+string tempClasse = "";   // variable temporaire pour la Classe du Héros
+string tempEspece = "";   // variable temporaire pour l'Espece du héros
+string tempFonctions = "";   // variable temporaire pour la Fonctions du héros
+string tempArme = "";   // variable temporaire pour l'arme du héros
+int tempForce = 0;   // variable temporaire pour la force du héros
+int tempExp = 0;   // variable temporaire pour le expérience du héros
+int tempTour = 0;   // variable temporaire pour le tour 
 
 sauvegarder LaSauvegarder;
+magasin LeMagasin;
 
 string navigation::ChargerLaSauvegarde()
 {
+    Fichier.open(NomFichier.c_str());
+    FichierTour.open(NomfichierTour.c_str());
+
     string ligne = "";
     string Nomheros = "";
     string VieJoueur = "";
@@ -88,6 +93,9 @@ string navigation::ChargerLaSauvegarde()
     tempForce = atoi(Force.c_str());
     tempExp = atoi(Exp.c_str());
 
+    Fichier.close();
+    FichierTour.close();
+
     return "OK" ;
 }
 
@@ -117,7 +125,8 @@ void navigation::MenuNavigation()
     }
     else if (Choix == "Shop" || Choix == "shop")
     {
-        cout << "SHOP GO !";
+        system("cls");
+        LeMagasin.MenuShop();
     }
     else if(Choix == "Save" || Choix == "save")
     {

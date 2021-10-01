@@ -6,9 +6,11 @@ CMakeFiles/RPGUnderGround.dir/Fonctions/heros.cpp.obj: \
  ../Header/heros.h
 CMakeFiles/RPGUnderGround.dir/Fonctions/magasin.cpp.obj: \
  ../Fonctions/magasin.cpp \
- ../Header/magasin.h
+ ../Header/magasin.h \
+ ../Header/navigation.h
 CMakeFiles/RPGUnderGround.dir/Fonctions/navigation.cpp.obj: \
  ../Fonctions/navigation.cpp \
+ ../Header/magasin.h \
  ../Header/navigation.h \
  ../Header/sauvegarder.h
 CMakeFiles/RPGUnderGround.dir/Fonctions/preparation.cpp.obj: \

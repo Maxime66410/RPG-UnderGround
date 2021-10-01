@@ -6,9 +6,31 @@
 
 #IncludeRegexTransform: 
 
-D:/Projet JetBrain/CLion/RPGUnderGround/Fonctions/magasin.cpp
+D:/Projet JetBrain/CLion/RPGUnderGround/Fonctions/navigation.cpp
+../Header/navigation.h
+D:/Projet JetBrain/CLion/RPGUnderGround/Header/navigation.h
+../Header/sauvegarder.h
+D:/Projet JetBrain/CLion/RPGUnderGround/Header/sauvegarder.h
 ../Header/magasin.h
 D:/Projet JetBrain/CLion/RPGUnderGround/Header/magasin.h
+iostream
+-
+string
+-
+fstream
+-
+iterator
+-
 
 D:/Projet JetBrain/CLion/RPGUnderGround/Header/magasin.h
+
+D:/Projet JetBrain/CLion/RPGUnderGround/Header/navigation.h
+iterator
+-
+
+D:/Projet JetBrain/CLion/RPGUnderGround/Header/sauvegarder.h
+iostream
+-
+string
+-
 

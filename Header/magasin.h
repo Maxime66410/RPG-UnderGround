@@ -7,6 +7,15 @@
 
 
 class magasin {
+protected:
+
+public:
+    void MenuShop();
+    void ChargerSauvegardes();
+    void SauvegarderInv();
+    void Acheter();
+    void Vendre();
+    void RetourMenu();
 
 };
 

@@ -8,13 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/Projet JetBrain/CLion/RPGUnderGround/Fonctions/combat.cpp" "D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug/CMakeFiles/RPGUnderGround.dir/Fonctions/combat.cpp.obj"
-  "D:/Projet JetBrain/CLion/RPGUnderGround/Fonctions/heros.cpp" "D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug/CMakeFiles/RPGUnderGround.dir/Fonctions/heros.cpp.obj"
-  "D:/Projet JetBrain/CLion/RPGUnderGround/Fonctions/magasin.cpp" "D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug/CMakeFiles/RPGUnderGround.dir/Fonctions/magasin.cpp.obj"
-  "D:/Projet JetBrain/CLion/RPGUnderGround/Fonctions/navigation.cpp" "D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug/CMakeFiles/RPGUnderGround.dir/Fonctions/navigation.cpp.obj"
-  "D:/Projet JetBrain/CLion/RPGUnderGround/Fonctions/preparation.cpp" "D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug/CMakeFiles/RPGUnderGround.dir/Fonctions/preparation.cpp.obj"
-  "D:/Projet JetBrain/CLion/RPGUnderGround/Fonctions/sauvegarder.cpp" "D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug/CMakeFiles/RPGUnderGround.dir/Fonctions/sauvegarder.cpp.obj"
-  "D:/Projet JetBrain/CLion/RPGUnderGround/main.cpp" "D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug/CMakeFiles/RPGUnderGround.dir/main.cpp.obj"
+  "D:/GitHub/RPG-UnderGround/Fonctions/combat.cpp" "D:/GitHub/RPG-UnderGround/cmake-build-debug/CMakeFiles/RPGUnderGround.dir/Fonctions/combat.cpp.obj"
+  "D:/GitHub/RPG-UnderGround/Fonctions/heros.cpp" "D:/GitHub/RPG-UnderGround/cmake-build-debug/CMakeFiles/RPGUnderGround.dir/Fonctions/heros.cpp.obj"
+  "D:/GitHub/RPG-UnderGround/Fonctions/magasin.cpp" "D:/GitHub/RPG-UnderGround/cmake-build-debug/CMakeFiles/RPGUnderGround.dir/Fonctions/magasin.cpp.obj"
+  "D:/GitHub/RPG-UnderGround/Fonctions/navigation.cpp" "D:/GitHub/RPG-UnderGround/cmake-build-debug/CMakeFiles/RPGUnderGround.dir/Fonctions/navigation.cpp.obj"
+  "D:/GitHub/RPG-UnderGround/Fonctions/preparation.cpp" "D:/GitHub/RPG-UnderGround/cmake-build-debug/CMakeFiles/RPGUnderGround.dir/Fonctions/preparation.cpp.obj"
+  "D:/GitHub/RPG-UnderGround/Fonctions/sauvegarder.cpp" "D:/GitHub/RPG-UnderGround/cmake-build-debug/CMakeFiles/RPGUnderGround.dir/Fonctions/sauvegarder.cpp.obj"
+  "D:/GitHub/RPG-UnderGround/main.cpp" "D:/GitHub/RPG-UnderGround/cmake-build-debug/CMakeFiles/RPGUnderGround.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-D:/Projet JetBrain/CLion/RPGUnderGround/Fonctions/combat.cpp
+D:/GitHub/RPG-UnderGround/Fonctions/combat.cpp
 ../Header/combat.h
-D:/Projet JetBrain/CLion/RPGUnderGround/Header/combat.h
+D:/GitHub/RPG-UnderGround/Header/combat.h
 ../Header/navigation.h
-D:/Projet JetBrain/CLion/RPGUnderGround/Header/navigation.h
+D:/GitHub/RPG-UnderGround/Header/navigation.h
 ../Header/heros.h
-D:/Projet JetBrain/CLion/RPGUnderGround/Header/heros.h
+D:/GitHub/RPG-UnderGround/Header/heros.h
 iostream
 -
 string
@@ -20,13 +20,13 @@ string
 fstream
 -
 
-D:/Projet JetBrain/CLion/RPGUnderGround/Header/combat.h
+D:/GitHub/RPG-UnderGround/Header/combat.h
 
-D:/Projet JetBrain/CLion/RPGUnderGround/Header/heros.h
+D:/GitHub/RPG-UnderGround/Header/heros.h
 iostream
 -
 
-D:/Projet JetBrain/CLion/RPGUnderGround/Header/navigation.h
+D:/GitHub/RPG-UnderGround/Header/navigation.h
 iterator
 -
 

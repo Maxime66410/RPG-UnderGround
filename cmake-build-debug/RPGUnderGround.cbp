@@ -8,123 +8,123 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug"/>
+				<Option working_dir="D:/GitHub/RPG-UnderGround/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/Programme/WinMG/bin/mingw32-make.exe -f &quot;D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="D:/Programme/WinMG/bin/mingw32-make.exe -f &quot;D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Programme/WinMG/bin/mingw32-make.exe -f &quot;D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Programme/WinMG/bin/mingw32-make.exe -f &quot;D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/Programme/MinGW/bin/mingw32-make.exe -f &quot;D:/GitHub/RPG-UnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/Programme/MinGW/bin/mingw32-make.exe -f &quot;D:/GitHub/RPG-UnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Programme/MinGW/bin/mingw32-make.exe -f &quot;D:/GitHub/RPG-UnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Programme/MinGW/bin/mingw32-make.exe -f &quot;D:/GitHub/RPG-UnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="RPGUnderGround">
-				<Option output="D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug/RPGUnderGround.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug"/>
+				<Option output="D:/GitHub/RPG-UnderGround/cmake-build-debug/RPGUnderGround.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/GitHub/RPG-UnderGround/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="D:/Programme/WinMG/include"/>
-					<Add directory="d:\programme\winmg\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3"/>
-					<Add directory="d:\programme\winmg\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/x86_64-w64-mingw32"/>
-					<Add directory="d:\programme\winmg\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/backward"/>
-					<Add directory="d:\programme\winmg\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/include"/>
-					<Add directory="d:\programme\winmg\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/include-fixed"/>
-					<Add directory="d:\programme\winmg\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="D:/Programme/MinGW/include"/>
+					<Add directory="d:\programme\mingw\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3"/>
+					<Add directory="d:\programme\mingw\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/x86_64-w64-mingw32"/>
+					<Add directory="d:\programme\mingw\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/backward"/>
+					<Add directory="d:\programme\mingw\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/include"/>
+					<Add directory="d:\programme\mingw\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/include-fixed"/>
+					<Add directory="d:\programme\mingw\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/Programme/WinMG/bin/mingw32-make.exe -f &quot;D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 RPGUnderGround"/>
-					<CompileFile command="D:/Programme/WinMG/bin/mingw32-make.exe -f &quot;D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Programme/WinMG/bin/mingw32-make.exe -f &quot;D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Programme/WinMG/bin/mingw32-make.exe -f &quot;D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/Programme/MinGW/bin/mingw32-make.exe -f &quot;D:/GitHub/RPG-UnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 RPGUnderGround"/>
+					<CompileFile command="D:/Programme/MinGW/bin/mingw32-make.exe -f &quot;D:/GitHub/RPG-UnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Programme/MinGW/bin/mingw32-make.exe -f &quot;D:/GitHub/RPG-UnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Programme/MinGW/bin/mingw32-make.exe -f &quot;D:/GitHub/RPG-UnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="RPGUnderGround/fast">
-				<Option output="D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug/RPGUnderGround.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug"/>
+				<Option output="D:/GitHub/RPG-UnderGround/cmake-build-debug/RPGUnderGround.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/GitHub/RPG-UnderGround/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="D:/Programme/WinMG/include"/>
-					<Add directory="d:\programme\winmg\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3"/>
-					<Add directory="d:\programme\winmg\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/x86_64-w64-mingw32"/>
-					<Add directory="d:\programme\winmg\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/backward"/>
-					<Add directory="d:\programme\winmg\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/include"/>
-					<Add directory="d:\programme\winmg\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/include-fixed"/>
-					<Add directory="d:\programme\winmg\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="D:/Programme/MinGW/include"/>
+					<Add directory="d:\programme\mingw\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3"/>
+					<Add directory="d:\programme\mingw\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/x86_64-w64-mingw32"/>
+					<Add directory="d:\programme\mingw\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/backward"/>
+					<Add directory="d:\programme\mingw\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/include"/>
+					<Add directory="d:\programme\mingw\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/include-fixed"/>
+					<Add directory="d:\programme\mingw\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/Programme/WinMG/bin/mingw32-make.exe -f &quot;D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 RPGUnderGround/fast"/>
-					<CompileFile command="D:/Programme/WinMG/bin/mingw32-make.exe -f &quot;D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Programme/WinMG/bin/mingw32-make.exe -f &quot;D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Programme/WinMG/bin/mingw32-make.exe -f &quot;D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/Programme/MinGW/bin/mingw32-make.exe -f &quot;D:/GitHub/RPG-UnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 RPGUnderGround/fast"/>
+					<CompileFile command="D:/Programme/MinGW/bin/mingw32-make.exe -f &quot;D:/GitHub/RPG-UnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Programme/MinGW/bin/mingw32-make.exe -f &quot;D:/GitHub/RPG-UnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Programme/MinGW/bin/mingw32-make.exe -f &quot;D:/GitHub/RPG-UnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug"/>
+				<Option working_dir="D:/GitHub/RPG-UnderGround/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/Programme/WinMG/bin/mingw32-make.exe -f &quot;D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="D:/Programme/WinMG/bin/mingw32-make.exe -f &quot;D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Programme/WinMG/bin/mingw32-make.exe -f &quot;D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Programme/WinMG/bin/mingw32-make.exe -f &quot;D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/Programme/MinGW/bin/mingw32-make.exe -f &quot;D:/GitHub/RPG-UnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/Programme/MinGW/bin/mingw32-make.exe -f &quot;D:/GitHub/RPG-UnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Programme/MinGW/bin/mingw32-make.exe -f &quot;D:/GitHub/RPG-UnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Programme/MinGW/bin/mingw32-make.exe -f &quot;D:/GitHub/RPG-UnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug"/>
+				<Option working_dir="D:/GitHub/RPG-UnderGround/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/Programme/WinMG/bin/mingw32-make.exe -f &quot;D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="D:/Programme/WinMG/bin/mingw32-make.exe -f &quot;D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Programme/WinMG/bin/mingw32-make.exe -f &quot;D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Programme/WinMG/bin/mingw32-make.exe -f &quot;D:/Projet JetBrain/CLion/RPGUnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/Programme/MinGW/bin/mingw32-make.exe -f &quot;D:/GitHub/RPG-UnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/Programme/MinGW/bin/mingw32-make.exe -f &quot;D:/GitHub/RPG-UnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Programme/MinGW/bin/mingw32-make.exe -f &quot;D:/GitHub/RPG-UnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Programme/MinGW/bin/mingw32-make.exe -f &quot;D:/GitHub/RPG-UnderGround/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/Projet JetBrain/CLion/RPGUnderGround/Fonctions/combat.cpp">
+		<Unit filename="D:/GitHub/RPG-UnderGround/Fonctions/combat.cpp">
 			<Option target="RPGUnderGround"/>
 		</Unit>
-		<Unit filename="D:/Projet JetBrain/CLion/RPGUnderGround/Fonctions/heros.cpp">
+		<Unit filename="D:/GitHub/RPG-UnderGround/Fonctions/heros.cpp">
 			<Option target="RPGUnderGround"/>
 		</Unit>
-		<Unit filename="D:/Projet JetBrain/CLion/RPGUnderGround/Fonctions/magasin.cpp">
+		<Unit filename="D:/GitHub/RPG-UnderGround/Fonctions/magasin.cpp">
 			<Option target="RPGUnderGround"/>
 		</Unit>
-		<Unit filename="D:/Projet JetBrain/CLion/RPGUnderGround/Fonctions/navigation.cpp">
+		<Unit filename="D:/GitHub/RPG-UnderGround/Fonctions/navigation.cpp">
 			<Option target="RPGUnderGround"/>
 		</Unit>
-		<Unit filename="D:/Projet JetBrain/CLion/RPGUnderGround/Fonctions/preparation.cpp">
+		<Unit filename="D:/GitHub/RPG-UnderGround/Fonctions/preparation.cpp">
 			<Option target="RPGUnderGround"/>
 		</Unit>
-		<Unit filename="D:/Projet JetBrain/CLion/RPGUnderGround/Fonctions/sauvegarder.cpp">
+		<Unit filename="D:/GitHub/RPG-UnderGround/Fonctions/sauvegarder.cpp">
 			<Option target="RPGUnderGround"/>
 		</Unit>
-		<Unit filename="D:/Projet JetBrain/CLion/RPGUnderGround/Header">
+		<Unit filename="D:/GitHub/RPG-UnderGround/Header">
 			<Option target="RPGUnderGround"/>
 		</Unit>
-		<Unit filename="D:/Projet JetBrain/CLion/RPGUnderGround/Header/combat.h">
+		<Unit filename="D:/GitHub/RPG-UnderGround/Header/combat.h">
 			<Option target="RPGUnderGround"/>
 		</Unit>
-		<Unit filename="D:/Projet JetBrain/CLion/RPGUnderGround/Header/heros.h">
+		<Unit filename="D:/GitHub/RPG-UnderGround/Header/heros.h">
 			<Option target="RPGUnderGround"/>
 		</Unit>
-		<Unit filename="D:/Projet JetBrain/CLion/RPGUnderGround/Header/magasin.h">
+		<Unit filename="D:/GitHub/RPG-UnderGround/Header/magasin.h">
 			<Option target="RPGUnderGround"/>
 		</Unit>
-		<Unit filename="D:/Projet JetBrain/CLion/RPGUnderGround/Header/navigation.h">
+		<Unit filename="D:/GitHub/RPG-UnderGround/Header/navigation.h">
 			<Option target="RPGUnderGround"/>
 		</Unit>
-		<Unit filename="D:/Projet JetBrain/CLion/RPGUnderGround/Header/preparation.h">
+		<Unit filename="D:/GitHub/RPG-UnderGround/Header/preparation.h">
 			<Option target="RPGUnderGround"/>
 		</Unit>
-		<Unit filename="D:/Projet JetBrain/CLion/RPGUnderGround/Header/sauvegarder.h">
+		<Unit filename="D:/GitHub/RPG-UnderGround/Header/sauvegarder.h">
 			<Option target="RPGUnderGround"/>
 		</Unit>
-		<Unit filename="D:/Projet JetBrain/CLion/RPGUnderGround/main.cpp">
+		<Unit filename="D:/GitHub/RPG-UnderGround/main.cpp">
 			<Option target="RPGUnderGround"/>
 		</Unit>
-		<Unit filename="D:/Projet JetBrain/CLion/RPGUnderGround/CMakeLists.txt">
+		<Unit filename="D:/GitHub/RPG-UnderGround/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

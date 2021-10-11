@@ -4,8 +4,14 @@
 CMakeFiles/RPGUnderGround.dir/Fonctions/combat.cpp.obj
  D:/GitHub/RPG-UnderGround/Fonctions/combat.cpp
  D:/GitHub/RPG-UnderGround/Header/combat.h
+ D:/GitHub/RPG-UnderGround/Header/force.h
  D:/GitHub/RPG-UnderGround/Header/heros.h
+ D:/GitHub/RPG-UnderGround/Header/magie.h
  D:/GitHub/RPG-UnderGround/Header/navigation.h
+CMakeFiles/RPGUnderGround.dir/Fonctions/force.cpp.obj
+ D:/GitHub/RPG-UnderGround/Fonctions/force.cpp
+ D:/GitHub/RPG-UnderGround/Header/force.h
+ D:/GitHub/RPG-UnderGround/Header/heros.h
 CMakeFiles/RPGUnderGround.dir/Fonctions/heros.cpp.obj
  D:/GitHub/RPG-UnderGround/Fonctions/heros.cpp
  D:/GitHub/RPG-UnderGround/Header/heros.h
@@ -13,6 +19,10 @@ CMakeFiles/RPGUnderGround.dir/Fonctions/magasin.cpp.obj
  D:/GitHub/RPG-UnderGround/Fonctions/magasin.cpp
  D:/GitHub/RPG-UnderGround/Header/magasin.h
  D:/GitHub/RPG-UnderGround/Header/navigation.h
+CMakeFiles/RPGUnderGround.dir/Fonctions/magie.cpp.obj
+ D:/GitHub/RPG-UnderGround/Fonctions/magie.cpp
+ D:/GitHub/RPG-UnderGround/Header/heros.h
+ D:/GitHub/RPG-UnderGround/Header/magie.h
 CMakeFiles/RPGUnderGround.dir/Fonctions/navigation.cpp.obj
  D:/GitHub/RPG-UnderGround/Fonctions/navigation.cpp
  D:/GitHub/RPG-UnderGround/Header/combat.h

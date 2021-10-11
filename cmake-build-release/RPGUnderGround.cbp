@@ -91,6 +91,9 @@
 		<Unit filename="D:/GitHub/RPG-UnderGround/Fonctions/magasin.cpp">
 			<Option target="RPGUnderGround"/>
 		</Unit>
+		<Unit filename="D:/GitHub/RPG-UnderGround/Fonctions/magie.cpp">
+			<Option target="RPGUnderGround"/>
+		</Unit>
 		<Unit filename="D:/GitHub/RPG-UnderGround/Fonctions/navigation.cpp">
 			<Option target="RPGUnderGround"/>
 		</Unit>
@@ -112,6 +115,9 @@
 		<Unit filename="D:/GitHub/RPG-UnderGround/Header/magasin.h">
 			<Option target="RPGUnderGround"/>
 		</Unit>
+		<Unit filename="D:/GitHub/RPG-UnderGround/Header/magie.h">
+			<Option target="RPGUnderGround"/>
+		</Unit>
 		<Unit filename="D:/GitHub/RPG-UnderGround/Header/navigation.h">
 			<Option target="RPGUnderGround"/>
 		</Unit>
@@ -119,6 +125,12 @@
 			<Option target="RPGUnderGround"/>
 		</Unit>
 		<Unit filename="D:/GitHub/RPG-UnderGround/Header/sauvegarder.h">
+			<Option target="RPGUnderGround"/>
+		</Unit>
+		<Unit filename="D:/GitHub/RPG-UnderGround/force.cpp">
+			<Option target="RPGUnderGround"/>
+		</Unit>
+		<Unit filename="D:/GitHub/RPG-UnderGround/force.h">
 			<Option target="RPGUnderGround"/>
 		</Unit>
 		<Unit filename="D:/GitHub/RPG-UnderGround/main.cpp">

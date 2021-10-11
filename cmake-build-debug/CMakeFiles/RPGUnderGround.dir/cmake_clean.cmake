@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/RPGUnderGround.dir/Fonctions/combat.cpp.obj"
+  "CMakeFiles/RPGUnderGround.dir/Fonctions/force.cpp.obj"
   "CMakeFiles/RPGUnderGround.dir/Fonctions/heros.cpp.obj"
   "CMakeFiles/RPGUnderGround.dir/Fonctions/magasin.cpp.obj"
+  "CMakeFiles/RPGUnderGround.dir/Fonctions/magie.cpp.obj"
   "CMakeFiles/RPGUnderGround.dir/Fonctions/navigation.cpp.obj"
   "CMakeFiles/RPGUnderGround.dir/Fonctions/preparation.cpp.obj"
   "CMakeFiles/RPGUnderGround.dir/Fonctions/sauvegarder.cpp.obj"

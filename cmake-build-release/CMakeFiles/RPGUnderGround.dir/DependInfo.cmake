@@ -11,9 +11,11 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/GitHub/RPG-UnderGround/Fonctions/combat.cpp" "D:/GitHub/RPG-UnderGround/cmake-build-release/CMakeFiles/RPGUnderGround.dir/Fonctions/combat.cpp.obj"
   "D:/GitHub/RPG-UnderGround/Fonctions/heros.cpp" "D:/GitHub/RPG-UnderGround/cmake-build-release/CMakeFiles/RPGUnderGround.dir/Fonctions/heros.cpp.obj"
   "D:/GitHub/RPG-UnderGround/Fonctions/magasin.cpp" "D:/GitHub/RPG-UnderGround/cmake-build-release/CMakeFiles/RPGUnderGround.dir/Fonctions/magasin.cpp.obj"
+  "D:/GitHub/RPG-UnderGround/Fonctions/magie.cpp" "D:/GitHub/RPG-UnderGround/cmake-build-release/CMakeFiles/RPGUnderGround.dir/Fonctions/magie.cpp.obj"
   "D:/GitHub/RPG-UnderGround/Fonctions/navigation.cpp" "D:/GitHub/RPG-UnderGround/cmake-build-release/CMakeFiles/RPGUnderGround.dir/Fonctions/navigation.cpp.obj"
   "D:/GitHub/RPG-UnderGround/Fonctions/preparation.cpp" "D:/GitHub/RPG-UnderGround/cmake-build-release/CMakeFiles/RPGUnderGround.dir/Fonctions/preparation.cpp.obj"
   "D:/GitHub/RPG-UnderGround/Fonctions/sauvegarder.cpp" "D:/GitHub/RPG-UnderGround/cmake-build-release/CMakeFiles/RPGUnderGround.dir/Fonctions/sauvegarder.cpp.obj"
+  "D:/GitHub/RPG-UnderGround/force.cpp" "D:/GitHub/RPG-UnderGround/cmake-build-release/CMakeFiles/RPGUnderGround.dir/force.cpp.obj"
   "D:/GitHub/RPG-UnderGround/main.cpp" "D:/GitHub/RPG-UnderGround/cmake-build-release/CMakeFiles/RPGUnderGround.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

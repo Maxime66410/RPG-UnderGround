@@ -152,6 +152,30 @@ Fonctions/combat.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGUnderGround.dir\build.make CMakeFiles/RPGUnderGround.dir/Fonctions/combat.cpp.s
 .PHONY : Fonctions/combat.cpp.s
 
+Fonctions/force.obj: Fonctions/force.cpp.obj
+.PHONY : Fonctions/force.obj
+
+# target to build an object file
+Fonctions/force.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGUnderGround.dir\build.make CMakeFiles/RPGUnderGround.dir/Fonctions/force.cpp.obj
+.PHONY : Fonctions/force.cpp.obj
+
+Fonctions/force.i: Fonctions/force.cpp.i
+.PHONY : Fonctions/force.i
+
+# target to preprocess a source file
+Fonctions/force.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGUnderGround.dir\build.make CMakeFiles/RPGUnderGround.dir/Fonctions/force.cpp.i
+.PHONY : Fonctions/force.cpp.i
+
+Fonctions/force.s: Fonctions/force.cpp.s
+.PHONY : Fonctions/force.s
+
+# target to generate assembly for a file
+Fonctions/force.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGUnderGround.dir\build.make CMakeFiles/RPGUnderGround.dir/Fonctions/force.cpp.s
+.PHONY : Fonctions/force.cpp.s
+
 Fonctions/heros.obj: Fonctions/heros.cpp.obj
 .PHONY : Fonctions/heros.obj
 
@@ -199,6 +223,30 @@ Fonctions/magasin.s: Fonctions/magasin.cpp.s
 Fonctions/magasin.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGUnderGround.dir\build.make CMakeFiles/RPGUnderGround.dir/Fonctions/magasin.cpp.s
 .PHONY : Fonctions/magasin.cpp.s
+
+Fonctions/magie.obj: Fonctions/magie.cpp.obj
+.PHONY : Fonctions/magie.obj
+
+# target to build an object file
+Fonctions/magie.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGUnderGround.dir\build.make CMakeFiles/RPGUnderGround.dir/Fonctions/magie.cpp.obj
+.PHONY : Fonctions/magie.cpp.obj
+
+Fonctions/magie.i: Fonctions/magie.cpp.i
+.PHONY : Fonctions/magie.i
+
+# target to preprocess a source file
+Fonctions/magie.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGUnderGround.dir\build.make CMakeFiles/RPGUnderGround.dir/Fonctions/magie.cpp.i
+.PHONY : Fonctions/magie.cpp.i
+
+Fonctions/magie.s: Fonctions/magie.cpp.s
+.PHONY : Fonctions/magie.s
+
+# target to generate assembly for a file
+Fonctions/magie.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGUnderGround.dir\build.make CMakeFiles/RPGUnderGround.dir/Fonctions/magie.cpp.s
+.PHONY : Fonctions/magie.cpp.s
 
 Fonctions/navigation.obj: Fonctions/navigation.cpp.obj
 .PHONY : Fonctions/navigation.obj
@@ -308,12 +356,18 @@ help:
 	@echo ... Fonctions/combat.obj
 	@echo ... Fonctions/combat.i
 	@echo ... Fonctions/combat.s
+	@echo ... Fonctions/force.obj
+	@echo ... Fonctions/force.i
+	@echo ... Fonctions/force.s
 	@echo ... Fonctions/heros.obj
 	@echo ... Fonctions/heros.i
 	@echo ... Fonctions/heros.s
 	@echo ... Fonctions/magasin.obj
 	@echo ... Fonctions/magasin.i
 	@echo ... Fonctions/magasin.s
+	@echo ... Fonctions/magie.obj
+	@echo ... Fonctions/magie.i
+	@echo ... Fonctions/magie.s
 	@echo ... Fonctions/navigation.obj
 	@echo ... Fonctions/navigation.i
 	@echo ... Fonctions/navigation.s

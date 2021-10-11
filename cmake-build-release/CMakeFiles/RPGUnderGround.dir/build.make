@@ -156,6 +156,32 @@ CMakeFiles/RPGUnderGround.dir/Fonctions/combat.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RPGUnderGround.dir/Fonctions/combat.cpp.s"
 	D:\Programme\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\GitHub\RPG-UnderGround\Fonctions\combat.cpp -o CMakeFiles\RPGUnderGround.dir\Fonctions\combat.cpp.s
 
+CMakeFiles/RPGUnderGround.dir/Fonctions/magie.cpp.obj: CMakeFiles/RPGUnderGround.dir/flags.make
+CMakeFiles/RPGUnderGround.dir/Fonctions/magie.cpp.obj: ../Fonctions/magie.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\GitHub\RPG-UnderGround\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/RPGUnderGround.dir/Fonctions/magie.cpp.obj"
+	D:\Programme\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RPGUnderGround.dir\Fonctions\magie.cpp.obj -c D:\GitHub\RPG-UnderGround\Fonctions\magie.cpp
+
+CMakeFiles/RPGUnderGround.dir/Fonctions/magie.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RPGUnderGround.dir/Fonctions/magie.cpp.i"
+	D:\Programme\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\GitHub\RPG-UnderGround\Fonctions\magie.cpp > CMakeFiles\RPGUnderGround.dir\Fonctions\magie.cpp.i
+
+CMakeFiles/RPGUnderGround.dir/Fonctions/magie.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RPGUnderGround.dir/Fonctions/magie.cpp.s"
+	D:\Programme\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\GitHub\RPG-UnderGround\Fonctions\magie.cpp -o CMakeFiles\RPGUnderGround.dir\Fonctions\magie.cpp.s
+
+CMakeFiles/RPGUnderGround.dir/force.cpp.obj: CMakeFiles/RPGUnderGround.dir/flags.make
+CMakeFiles/RPGUnderGround.dir/force.cpp.obj: ../force.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\GitHub\RPG-UnderGround\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/RPGUnderGround.dir/force.cpp.obj"
+	D:\Programme\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RPGUnderGround.dir\force.cpp.obj -c D:\GitHub\RPG-UnderGround\force.cpp
+
+CMakeFiles/RPGUnderGround.dir/force.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RPGUnderGround.dir/force.cpp.i"
+	D:\Programme\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\GitHub\RPG-UnderGround\force.cpp > CMakeFiles\RPGUnderGround.dir\force.cpp.i
+
+CMakeFiles/RPGUnderGround.dir/force.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RPGUnderGround.dir/force.cpp.s"
+	D:\Programme\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\GitHub\RPG-UnderGround\force.cpp -o CMakeFiles\RPGUnderGround.dir\force.cpp.s
+
 # Object files for target RPGUnderGround
 RPGUnderGround_OBJECTS = \
 "CMakeFiles/RPGUnderGround.dir/main.cpp.obj" \
@@ -164,7 +190,9 @@ RPGUnderGround_OBJECTS = \
 "CMakeFiles/RPGUnderGround.dir/Fonctions/heros.cpp.obj" \
 "CMakeFiles/RPGUnderGround.dir/Fonctions/sauvegarder.cpp.obj" \
 "CMakeFiles/RPGUnderGround.dir/Fonctions/magasin.cpp.obj" \
-"CMakeFiles/RPGUnderGround.dir/Fonctions/combat.cpp.obj"
+"CMakeFiles/RPGUnderGround.dir/Fonctions/combat.cpp.obj" \
+"CMakeFiles/RPGUnderGround.dir/Fonctions/magie.cpp.obj" \
+"CMakeFiles/RPGUnderGround.dir/force.cpp.obj"
 
 # External object files for target RPGUnderGround
 RPGUnderGround_EXTERNAL_OBJECTS =
@@ -176,11 +204,13 @@ RPGUnderGround.exe: CMakeFiles/RPGUnderGround.dir/Fonctions/heros.cpp.obj
 RPGUnderGround.exe: CMakeFiles/RPGUnderGround.dir/Fonctions/sauvegarder.cpp.obj
 RPGUnderGround.exe: CMakeFiles/RPGUnderGround.dir/Fonctions/magasin.cpp.obj
 RPGUnderGround.exe: CMakeFiles/RPGUnderGround.dir/Fonctions/combat.cpp.obj
+RPGUnderGround.exe: CMakeFiles/RPGUnderGround.dir/Fonctions/magie.cpp.obj
+RPGUnderGround.exe: CMakeFiles/RPGUnderGround.dir/force.cpp.obj
 RPGUnderGround.exe: CMakeFiles/RPGUnderGround.dir/build.make
 RPGUnderGround.exe: CMakeFiles/RPGUnderGround.dir/linklibs.rsp
 RPGUnderGround.exe: CMakeFiles/RPGUnderGround.dir/objects1.rsp
 RPGUnderGround.exe: CMakeFiles/RPGUnderGround.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\GitHub\RPG-UnderGround\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable RPGUnderGround.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\GitHub\RPG-UnderGround\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable RPGUnderGround.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\RPGUnderGround.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

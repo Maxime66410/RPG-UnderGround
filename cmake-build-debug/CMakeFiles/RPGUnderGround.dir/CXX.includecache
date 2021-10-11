@@ -13,6 +13,10 @@ D:/GitHub/RPG-UnderGround/Header/combat.h
 D:/GitHub/RPG-UnderGround/Header/navigation.h
 ../Header/heros.h
 D:/GitHub/RPG-UnderGround/Header/heros.h
+../Header/magie.h
+D:/GitHub/RPG-UnderGround/Header/magie.h
+../Header/force.h
+D:/GitHub/RPG-UnderGround/Header/force.h
 iostream
 -
 string
@@ -22,9 +26,17 @@ fstream
 
 D:/GitHub/RPG-UnderGround/Header/combat.h
 
+D:/GitHub/RPG-UnderGround/Header/force.h
+heros.h
+D:/GitHub/RPG-UnderGround/Header/heros.h
+
 D:/GitHub/RPG-UnderGround/Header/heros.h
 iostream
 -
+
+D:/GitHub/RPG-UnderGround/Header/magie.h
+heros.h
+D:/GitHub/RPG-UnderGround/Header/heros.h
 
 D:/GitHub/RPG-UnderGround/Header/navigation.h
 iterator

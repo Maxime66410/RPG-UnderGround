@@ -4,7 +4,7 @@
 
 class combat {
 public:
-    void creationEnnemie();
+    void creationJoueurEtEnemie();
     void chargerLesData();
     void sauvegarderLesData();
     void Game();

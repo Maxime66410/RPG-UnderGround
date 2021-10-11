@@ -4,8 +4,14 @@
 CMakeFiles/RPGUnderGround.dir/Fonctions/combat.cpp.obj: \
  ../Fonctions/combat.cpp \
  ../Header/combat.h \
+ ../Header/force.h \
  ../Header/heros.h \
+ ../Header/magie.h \
  ../Header/navigation.h
+CMakeFiles/RPGUnderGround.dir/Fonctions/force.cpp.obj: \
+ ../Fonctions/force.cpp \
+ ../Header/force.h \
+ ../Header/heros.h
 CMakeFiles/RPGUnderGround.dir/Fonctions/heros.cpp.obj: \
  ../Fonctions/heros.cpp \
  ../Header/heros.h
@@ -13,6 +19,10 @@ CMakeFiles/RPGUnderGround.dir/Fonctions/magasin.cpp.obj: \
  ../Fonctions/magasin.cpp \
  ../Header/magasin.h \
  ../Header/navigation.h
+CMakeFiles/RPGUnderGround.dir/Fonctions/magie.cpp.obj: \
+ ../Fonctions/magie.cpp \
+ ../Header/heros.h \
+ ../Header/magie.h
 CMakeFiles/RPGUnderGround.dir/Fonctions/navigation.cpp.obj: \
  ../Fonctions/navigation.cpp \
  ../Header/combat.h \

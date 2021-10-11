@@ -200,6 +200,30 @@ Fonctions/magasin.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGUnderGround.dir\build.make CMakeFiles/RPGUnderGround.dir/Fonctions/magasin.cpp.s
 .PHONY : Fonctions/magasin.cpp.s
 
+Fonctions/magie.obj: Fonctions/magie.cpp.obj
+.PHONY : Fonctions/magie.obj
+
+# target to build an object file
+Fonctions/magie.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGUnderGround.dir\build.make CMakeFiles/RPGUnderGround.dir/Fonctions/magie.cpp.obj
+.PHONY : Fonctions/magie.cpp.obj
+
+Fonctions/magie.i: Fonctions/magie.cpp.i
+.PHONY : Fonctions/magie.i
+
+# target to preprocess a source file
+Fonctions/magie.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGUnderGround.dir\build.make CMakeFiles/RPGUnderGround.dir/Fonctions/magie.cpp.i
+.PHONY : Fonctions/magie.cpp.i
+
+Fonctions/magie.s: Fonctions/magie.cpp.s
+.PHONY : Fonctions/magie.s
+
+# target to generate assembly for a file
+Fonctions/magie.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGUnderGround.dir\build.make CMakeFiles/RPGUnderGround.dir/Fonctions/magie.cpp.s
+.PHONY : Fonctions/magie.cpp.s
+
 Fonctions/navigation.obj: Fonctions/navigation.cpp.obj
 .PHONY : Fonctions/navigation.obj
 
@@ -272,6 +296,30 @@ Fonctions/sauvegarder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGUnderGround.dir\build.make CMakeFiles/RPGUnderGround.dir/Fonctions/sauvegarder.cpp.s
 .PHONY : Fonctions/sauvegarder.cpp.s
 
+force.obj: force.cpp.obj
+.PHONY : force.obj
+
+# target to build an object file
+force.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGUnderGround.dir\build.make CMakeFiles/RPGUnderGround.dir/force.cpp.obj
+.PHONY : force.cpp.obj
+
+force.i: force.cpp.i
+.PHONY : force.i
+
+# target to preprocess a source file
+force.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGUnderGround.dir\build.make CMakeFiles/RPGUnderGround.dir/force.cpp.i
+.PHONY : force.cpp.i
+
+force.s: force.cpp.s
+.PHONY : force.s
+
+# target to generate assembly for a file
+force.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGUnderGround.dir\build.make CMakeFiles/RPGUnderGround.dir/force.cpp.s
+.PHONY : force.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -314,6 +362,9 @@ help:
 	@echo ... Fonctions/magasin.obj
 	@echo ... Fonctions/magasin.i
 	@echo ... Fonctions/magasin.s
+	@echo ... Fonctions/magie.obj
+	@echo ... Fonctions/magie.i
+	@echo ... Fonctions/magie.s
 	@echo ... Fonctions/navigation.obj
 	@echo ... Fonctions/navigation.i
 	@echo ... Fonctions/navigation.s
@@ -323,6 +374,9 @@ help:
 	@echo ... Fonctions/sauvegarder.obj
 	@echo ... Fonctions/sauvegarder.i
 	@echo ... Fonctions/sauvegarder.s
+	@echo ... force.obj
+	@echo ... force.i
+	@echo ... force.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

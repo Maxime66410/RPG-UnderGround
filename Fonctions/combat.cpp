@@ -1,6 +1,8 @@
 #include "../Header/combat.h"
 #include "../Header/navigation.h"
 #include "../Header/heros.h"
+#include "../Header/magie.h"
+#include "../Header/force.h"
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -42,6 +44,7 @@ int jc_PotionDeForce = 0;
 
 // Variable du Jeux (Très important)
 bool DonneerDejaCharger(false);
+bool ChargementJoueurEtAi(false);
 
 void combat::InitialisationGame()
 {
@@ -114,10 +117,25 @@ void combat::InitialisationGame()
     DonneerDejaCharger = true;
 }
 
+void combat::creationJoueurEtEnemie()
+{
+    if(jc_ClasseJoueur == "Mage" || jc_ClasseJoueur == "mage" || jc_ClasseJoueur == "Archer" || jc_ClasseJoueur == "Archer")
+    {
+        magie Player(jc_NomJoueur, jc_VieJoueur, jc_MonnaieJoueur, jc_ClasseJoueur, jc_EspeceJoueur, jc_FonctionsJoueur, jc_ArmesJoueur, jc_ForceJoueur, jc_ExpJoueur, jc_ProtegerJoueur);
+        Player.afficher();
+    }
+    ChargementJoueurEtAi = true;
+}
+
 void combat::Game()
 {
     if(!DonneerDejaCharger)
     {
         InitialisationGame();
+    }
+
+    if(!ChargementJoueurEtAi)
+    {
+        creationJoueurEtEnemie();
     }
 }

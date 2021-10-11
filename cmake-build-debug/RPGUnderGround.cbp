@@ -85,10 +85,16 @@
 		<Unit filename="D:/GitHub/RPG-UnderGround/Fonctions/combat.cpp">
 			<Option target="RPGUnderGround"/>
 		</Unit>
+		<Unit filename="D:/GitHub/RPG-UnderGround/Fonctions/force.cpp">
+			<Option target="RPGUnderGround"/>
+		</Unit>
 		<Unit filename="D:/GitHub/RPG-UnderGround/Fonctions/heros.cpp">
 			<Option target="RPGUnderGround"/>
 		</Unit>
 		<Unit filename="D:/GitHub/RPG-UnderGround/Fonctions/magasin.cpp">
+			<Option target="RPGUnderGround"/>
+		</Unit>
+		<Unit filename="D:/GitHub/RPG-UnderGround/Fonctions/magie.cpp">
 			<Option target="RPGUnderGround"/>
 		</Unit>
 		<Unit filename="D:/GitHub/RPG-UnderGround/Fonctions/navigation.cpp">
@@ -106,10 +112,16 @@
 		<Unit filename="D:/GitHub/RPG-UnderGround/Header/combat.h">
 			<Option target="RPGUnderGround"/>
 		</Unit>
+		<Unit filename="D:/GitHub/RPG-UnderGround/Header/force.h">
+			<Option target="RPGUnderGround"/>
+		</Unit>
 		<Unit filename="D:/GitHub/RPG-UnderGround/Header/heros.h">
 			<Option target="RPGUnderGround"/>
 		</Unit>
 		<Unit filename="D:/GitHub/RPG-UnderGround/Header/magasin.h">
+			<Option target="RPGUnderGround"/>
+		</Unit>
+		<Unit filename="D:/GitHub/RPG-UnderGround/Header/magie.h">
 			<Option target="RPGUnderGround"/>
 		</Unit>
 		<Unit filename="D:/GitHub/RPG-UnderGround/Header/navigation.h">

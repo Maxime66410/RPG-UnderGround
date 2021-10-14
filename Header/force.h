@@ -7,9 +7,9 @@
 
 #include "heros.h"
 
-class force : heros {
+class force : public heros {
 public:
-    force(std::string nomheros, int vieheros, int monnaieheros, std::string classehero, std::string especeheros, std::string fonctionsheros, std::string armeheros, int forceheros, int expheros, bool protegerheros);
+    force(std::string nomheros, int vieheros, int monnaieheros, std::string classeheros, std::string especeheros, std::string fonctionsheros, std::string armeheros, int forceheros, int expheros, bool protegerheros);
 private:
     void m_utilisationForce(heros &cible);
 };

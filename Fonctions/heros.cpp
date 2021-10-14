@@ -76,14 +76,28 @@ void heros::utiliserObjets(std::string objet) // Méthode qui permet de utiliser
     }
 }
 
+void heros::TransfermHeros(heros &cible) // Faire transfère heros pour variable global
+{
+    m_HeroNom = cible.m_HeroNom;
+    m_HeroVie = cible.m_HeroVie;
+    m_Monnaie = cible.m_Monnaie;
+    m_Heroclasse = cible.m_Heroclasse;
+    m_HerosEspece = cible.m_HerosEspece;
+    m_HeroFonctions = cible.m_HeroFonctions;
+    m_HeroArmes = cible.m_HeroArmes;
+    m_HeroForce = cible.m_HeroForce;
+    m_HeroExp = cible.m_HeroExp;
+    m_HeroProteger = false;
+}
+
 void heros::afficher() const // Méthode pour afficher les informations du héros
 {
     if(vivant() == true)
     {
-        cout << m_HerosEspece << " > " << m_HeroNom << " : " << m_HeroVie << " / vivant" << endl;
+        cout << m_HerosEspece << " > " << m_HeroNom << " : " << m_HeroVie << " / vivant";
     }
     else
     {
-        cout << m_HerosEspece << " > " << m_HeroNom << " : " << m_HeroVie << " / mort" << endl;
+        cout << m_HerosEspece << " > " << m_HeroNom << " : " << m_HeroVie << " / mort";
     }
 }

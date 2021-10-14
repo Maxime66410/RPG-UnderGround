@@ -23,6 +23,10 @@ string
 -
 fstream
 -
+stdlib.h
+-
+time.h
+-
 
 D:/GitHub/RPG-UnderGround/Header/combat.h
 

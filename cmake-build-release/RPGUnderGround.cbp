@@ -85,6 +85,9 @@
 		<Unit filename="D:/GitHub/RPG-UnderGround/Fonctions/combat.cpp">
 			<Option target="RPGUnderGround"/>
 		</Unit>
+		<Unit filename="D:/GitHub/RPG-UnderGround/Fonctions/force.cpp">
+			<Option target="RPGUnderGround"/>
+		</Unit>
 		<Unit filename="D:/GitHub/RPG-UnderGround/Fonctions/heros.cpp">
 			<Option target="RPGUnderGround"/>
 		</Unit>
@@ -109,6 +112,9 @@
 		<Unit filename="D:/GitHub/RPG-UnderGround/Header/combat.h">
 			<Option target="RPGUnderGround"/>
 		</Unit>
+		<Unit filename="D:/GitHub/RPG-UnderGround/Header/force.h">
+			<Option target="RPGUnderGround"/>
+		</Unit>
 		<Unit filename="D:/GitHub/RPG-UnderGround/Header/heros.h">
 			<Option target="RPGUnderGround"/>
 		</Unit>
@@ -125,12 +131,6 @@
 			<Option target="RPGUnderGround"/>
 		</Unit>
 		<Unit filename="D:/GitHub/RPG-UnderGround/Header/sauvegarder.h">
-			<Option target="RPGUnderGround"/>
-		</Unit>
-		<Unit filename="D:/GitHub/RPG-UnderGround/force.cpp">
-			<Option target="RPGUnderGround"/>
-		</Unit>
-		<Unit filename="D:/GitHub/RPG-UnderGround/force.h">
 			<Option target="RPGUnderGround"/>
 		</Unit>
 		<Unit filename="D:/GitHub/RPG-UnderGround/main.cpp">

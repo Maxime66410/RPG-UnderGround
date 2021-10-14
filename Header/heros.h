@@ -26,6 +26,7 @@ public:
     bool vivant() const;
     void Fuir();
     virtual void afficher() const;
+    void TransfermHeros(heros &cible);
 };
 
 

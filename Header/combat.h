@@ -4,11 +4,16 @@
 
 class combat {
 public:
-    void creationJoueurEtEnemie();
-    void chargerLesData();
-    void sauvegarderLesData();
-    void Game();
-    void InitialisationGame();
+    void SiLeJoueurAGagner(); // La fonction lancer si le joueur Gagne
+    void SiLeJoueurAPerdu();    // La fonction lancer si le joueur Perd
+    void Attaquer();    // Fonction Attaquer
+    void Speciale();    // Fonction Attaque Spéciale
+    void Inventaire();  // Fonction Inventaire (Utilisation / Regarder)
+    void CheckLaPartie();   // Fonction qui regarde les statistique de la partie
+    void CreationJoueurEtPersonnage();  // Création du joueur ainsi que de l'ennmie
+    void sauvegarderLesData(); // Sauvegarde des Data du joueurs si il gagne
+    void Game(); // Base du script qui relie toute les fonctions
+    void InitialisationGame();  // Initialisation des Data du joueur
 };
 
 

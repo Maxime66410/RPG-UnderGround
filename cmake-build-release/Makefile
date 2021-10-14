@@ -152,6 +152,30 @@ Fonctions/combat.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGUnderGround.dir\build.make CMakeFiles/RPGUnderGround.dir/Fonctions/combat.cpp.s
 .PHONY : Fonctions/combat.cpp.s
 
+Fonctions/force.obj: Fonctions/force.cpp.obj
+.PHONY : Fonctions/force.obj
+
+# target to build an object file
+Fonctions/force.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGUnderGround.dir\build.make CMakeFiles/RPGUnderGround.dir/Fonctions/force.cpp.obj
+.PHONY : Fonctions/force.cpp.obj
+
+Fonctions/force.i: Fonctions/force.cpp.i
+.PHONY : Fonctions/force.i
+
+# target to preprocess a source file
+Fonctions/force.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGUnderGround.dir\build.make CMakeFiles/RPGUnderGround.dir/Fonctions/force.cpp.i
+.PHONY : Fonctions/force.cpp.i
+
+Fonctions/force.s: Fonctions/force.cpp.s
+.PHONY : Fonctions/force.s
+
+# target to generate assembly for a file
+Fonctions/force.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGUnderGround.dir\build.make CMakeFiles/RPGUnderGround.dir/Fonctions/force.cpp.s
+.PHONY : Fonctions/force.cpp.s
+
 Fonctions/heros.obj: Fonctions/heros.cpp.obj
 .PHONY : Fonctions/heros.obj
 
@@ -296,30 +320,6 @@ Fonctions/sauvegarder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGUnderGround.dir\build.make CMakeFiles/RPGUnderGround.dir/Fonctions/sauvegarder.cpp.s
 .PHONY : Fonctions/sauvegarder.cpp.s
 
-force.obj: force.cpp.obj
-.PHONY : force.obj
-
-# target to build an object file
-force.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGUnderGround.dir\build.make CMakeFiles/RPGUnderGround.dir/force.cpp.obj
-.PHONY : force.cpp.obj
-
-force.i: force.cpp.i
-.PHONY : force.i
-
-# target to preprocess a source file
-force.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGUnderGround.dir\build.make CMakeFiles/RPGUnderGround.dir/force.cpp.i
-.PHONY : force.cpp.i
-
-force.s: force.cpp.s
-.PHONY : force.s
-
-# target to generate assembly for a file
-force.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RPGUnderGround.dir\build.make CMakeFiles/RPGUnderGround.dir/force.cpp.s
-.PHONY : force.cpp.s
-
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -356,6 +356,9 @@ help:
 	@echo ... Fonctions/combat.obj
 	@echo ... Fonctions/combat.i
 	@echo ... Fonctions/combat.s
+	@echo ... Fonctions/force.obj
+	@echo ... Fonctions/force.i
+	@echo ... Fonctions/force.s
 	@echo ... Fonctions/heros.obj
 	@echo ... Fonctions/heros.i
 	@echo ... Fonctions/heros.s
@@ -374,9 +377,6 @@ help:
 	@echo ... Fonctions/sauvegarder.obj
 	@echo ... Fonctions/sauvegarder.i
 	@echo ... Fonctions/sauvegarder.s
-	@echo ... force.obj
-	@echo ... force.i
-	@echo ... force.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

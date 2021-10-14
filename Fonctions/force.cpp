@@ -8,7 +8,7 @@
 
 using namespace std;
 
-force::force(std::string nomheros, int vieheros, int monnaieheros, std::string classehero, std::string especeheros, std::string fonctionsheros, std::string armeheros, int forceheros, int expheros, bool protegerheros) : heros(nomheros, vieheros, monnaieheros, classehero, especeheros, fonctionsheros, armeheros, forceheros, expheros, protegerheros)
+force::force(std::string nomheros, int vieheros, int monnaieheros, std::string classeheros, std::string especeheros, std::string fonctionsheros, std::string armeheros, int forceheros, int expheros, bool protegerheros) : heros(nomheros, vieheros, monnaieheros, classeheros, especeheros, fonctionsheros, armeheros, forceheros, expheros, protegerheros)
 {
 
 }

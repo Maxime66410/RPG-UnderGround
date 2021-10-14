@@ -13,8 +13,6 @@ magie::magie(std::string nomheros, int vieheros, int monnaieheros, std::string c
 
 }
 
-
-
 void magie::m_magie(heros &cible)
 {
     cible.DiminutionVie(180);

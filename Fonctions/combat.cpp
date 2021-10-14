@@ -6,6 +6,8 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <stdlib.h>
+#include <time.h>
 
 using namespace std;
 
@@ -40,11 +42,21 @@ int jc_tour = 0;
 int jc_PotionDeSoins = 0;
 int jc_PotionDeForce = 0;
 
-// Chargement des variables enemy !!!
-
 // Variable du Jeux (Très important)
 bool DonneerDejaCharger(false);
 bool ChargementJoueurEtAi(false);
+string TypeDeMonstree = "";
+string BaseSetsss = "**********************************************************************************";
+string BaseSet2s = "*                                                                                *";
+bool PartieLancer(false);
+
+// Heros
+magie magie_HeroJoueur("", 0, 0, "", "", "", "", 0, 0, false);
+force force_HeroJoueur("", 0, 0, "", "", "", "", 0, 0, false);
+
+// Enemie
+magie magie_Monstre("", 0, 0, "", "", "", "", 0, 0, false);
+force force_Monstre("", 0, 0, "", "", "", "", 0, 0, false);
 
 void combat::InitialisationGame()
 {
@@ -117,25 +129,204 @@ void combat::InitialisationGame()
     DonneerDejaCharger = true;
 }
 
-void combat::creationJoueurEtEnemie()
+void combat::CreationJoueurEtPersonnage()
 {
     if(jc_ClasseJoueur == "Mage" || jc_ClasseJoueur == "mage" || jc_ClasseJoueur == "Archer" || jc_ClasseJoueur == "Archer")
     {
         magie Player(jc_NomJoueur, jc_VieJoueur, jc_MonnaieJoueur, jc_ClasseJoueur, jc_EspeceJoueur, jc_FonctionsJoueur, jc_ArmesJoueur, jc_ForceJoueur, jc_ExpJoueur, jc_ProtegerJoueur);
-        Player.afficher();
+        magie_HeroJoueur.TransfermHeros(Player);
     }
+    else
+    {
+        force Player(jc_NomJoueur, jc_VieJoueur, jc_MonnaieJoueur, jc_ClasseJoueur, jc_EspeceJoueur, jc_FonctionsJoueur, jc_ArmesJoueur, jc_ForceJoueur, jc_ExpJoueur, jc_ProtegerJoueur);
+        force_HeroJoueur.TransfermHeros(Player);
+    }
+
+    if(jc_tour != 20)
+    {   // Apparition des ennemie de base
+        srand (time(NULL));
+
+        int ChooseAI_Espece = rand() % 3 + 1;
+
+        // cout << ChooseAI_Espece << endl; // -> Permet de vérifié le nombre aléatoire
+
+        int Attaque = 0;
+        int Vie = 0;
+
+        if(ChooseAI_Espece == 2)    // Assignation Araignée pour l'ennemie
+        {
+            if(jc_tour != 0)
+            {
+                Attaque = 2 * jc_tour;
+                Vie = 35 * jc_tour;
+            }
+            else
+            {
+                Attaque = 2;
+                Vie = 35;
+            }
+
+            force Spider("Araignee Venimeuse", Vie, 0, "Monstre", "Araignee", "Pondre oeufs", "Soie d'araignee", Attaque, 0, false);
+            force_Monstre.TransfermHeros(Spider);
+            TypeDeMonstree = "Araignee";
+        }
+        else if(ChooseAI_Espece == 1)    // Assignation Zombie pour l'ennemie
+        {
+            if(jc_tour != 0)
+            {
+                Attaque = 4 * jc_tour;
+                Vie = 45 * jc_tour;
+            }
+            else
+            {
+                Attaque = 4;
+                Vie = 45;
+            }
+
+            force Zombie("Zombies", Vie, 0, "Monstre", "Zombie", "Mordre", "Bras & Poing", Attaque, 0, false);
+            force_Monstre.TransfermHeros(Zombie);
+            TypeDeMonstree = "Zombie";
+        }
+        else if(ChooseAI_Espece == 3)    // Assignation Squelette pour l'ennemie
+        {
+            if(jc_tour != 0)
+            {
+                Attaque = 3 * jc_tour;
+                Vie = 42 * jc_tour;
+            }
+            else
+            {
+                Attaque = 3;
+                Vie = 42;
+            }
+
+            magie Skeleton("Archer Squelette", Vie, 0, "Monstre", "Squelette", "Prendre la poussiere", "Epee d'os & Arc", Attaque, 0, false);
+            magie_Monstre.TransfermHeros(Skeleton);
+            TypeDeMonstree = "Squelette";
+        }
+    }
+    else
+    {
+        // Apparition du boss
+
+    }
+
+    PartieLancer = true;
     ChargementJoueurEtAi = true;
+}
+
+void combat::CheckLaPartie()    // Fonction qui regarde les statistique de la partie
+{
+    if(jc_ClasseJoueur == "Mage" || jc_ClasseJoueur == "mage" || jc_ClasseJoueur == "Archer" || jc_ClasseJoueur == "Archer")
+    {
+        if(magie_HeroJoueur.vivant() == false)
+        {
+            SiLeJoueurAPerdu();
+        }
+    }
+    else
+    {
+        if(force_HeroJoueur.vivant() == false)
+        {
+            SiLeJoueurAPerdu();
+        }
+    }
+
+    if(TypeDeMonstree == "Squelette")
+    {
+        if(magie_Monstre.vivant() == false )
+        {
+            SiLeJoueurAGagner();
+        }
+    }
+    else if (TypeDeMonstree == "Zombie")
+    {
+        if(force_Monstre.vivant() == false)
+        {
+            SiLeJoueurAGagner();
+        }
+    }
+    else if (TypeDeMonstree == "Araignee")
+    {
+        if(force_Monstre.vivant() == false)
+        {
+            SiLeJoueurAGagner();
+        }
+    }
+}
+
+void combat::SiLeJoueurAPerdu() // La fonction lancer si le joueur Perd
+{
+    cout << "Joueur a Perdu" << endl;
+}
+
+void combat::SiLeJoueurAGagner() // La fonction lancer si le joueur Gagne
+{
+    cout << "Joueur a Gagner" << endl;
 }
 
 void combat::Game()
 {
-    if(!DonneerDejaCharger)
+    if(!DonneerDejaCharger)  // Initialisation de la partie
     {
         InitialisationGame();
     }
 
-    if(!ChargementJoueurEtAi)
+    if(!ChargementJoueurEtAi) // Chargement joueur est IA
     {
-        creationJoueurEtEnemie();
+        CreationJoueurEtPersonnage();
     }
+
+    if(PartieLancer)
+    {
+
+    }
+
+    // Menu du combat
+
+    cout << BaseSetsss << endl << BaseSetsss << endl;
+    cout << BaseSet2s << endl << BaseSet2s << endl;
+    if(TypeDeMonstree == "Zombie" || TypeDeMonstree == "Araignee")
+    {
+        cout << "*             ";
+        force_Monstre.afficher();
+        cout << "             *" << endl;
+    }
+    else
+    {
+        cout << "*             ";
+        magie_Monstre.afficher();
+        cout << "             *" << endl;
+    }
+
+    cout << BaseSet2s << endl << BaseSet2s << endl;
+    cout << "*             ";
+    if(jc_ClasseJoueur == "Mage" || jc_ClasseJoueur == "mage" || jc_ClasseJoueur == "Archer" || jc_ClasseJoueur == "Archer")
+    {
+        magie_HeroJoueur.afficher();
+    }
+    else
+    {
+        force_HeroJoueur.afficher();
+    }
+    cout << "             *" << endl;
+    cout << BaseSet2s << endl << BaseSet2s << endl;
+    cout << BaseSetsss << endl << BaseSetsss << endl;
+    cout << "* Attaquer (attack) / ";
+    if(jc_ClasseJoueur == "Mage" || jc_ClasseJoueur == "mage" || jc_ClasseJoueur == "Archer" || jc_ClasseJoueur == "Archer")
+    {
+        cout << "Magie (magie) / ";
+    }
+    else
+    {
+        cout << "Force (coup) / ";
+    }
+    cout << "Inventaire (item) / Se proteger (protect) *" << endl;
+    cout << BaseSetsss << endl << BaseSetsss << endl;
+    string test = "";
+    cin >> test;
+
+   // Game();
+
+
 }

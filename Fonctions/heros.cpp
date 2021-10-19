@@ -58,6 +58,17 @@ void heros::Attaquer(heros &cible)  //  Méthode pour attaquer un monstre
     }
 }
 
+void heros::Competence(heros &cible) {
+    if(cible.m_HerosEspece != "humain" || cible.m_HerosEspece != "Humain" || cible.m_HerosEspece != "humains" || cible.m_HerosEspece != "Humains")
+    {
+        cible.DiminutionVie(m_HeroForce);
+    }
+    else
+    {
+        cout << "Vous ne pouvez pas attaquer votre allier !" << endl;
+    }
+}
+
 void heros::Fuir() // Méthode qui permet de fuir un combat
 {
     int ChangeDeFuir = rand() % 10 + 1;

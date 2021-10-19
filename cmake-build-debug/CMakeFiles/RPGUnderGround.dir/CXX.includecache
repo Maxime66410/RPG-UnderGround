@@ -28,6 +28,16 @@ stdlib.h
 time.h
 -
 
+D:/GitHub/RPG-UnderGround/Fonctions/heros.cpp
+../Header/heros.h
+D:/GitHub/RPG-UnderGround/Header/heros.h
+iostream
+-
+string
+-
+stdlib.h
+-
+
 D:/GitHub/RPG-UnderGround/Header/combat.h
 
 D:/GitHub/RPG-UnderGround/Header/force.h

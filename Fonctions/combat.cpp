@@ -49,6 +49,7 @@ string TypeDeMonstree = "";
 string BaseSetsss = "**********************************************************************************";
 string BaseSet2s = "*                                                                                *";
 bool PartieLancer(false);
+string ChoixMenu = "";
 
 // Heros
 magie magie_HeroJoueur("", 0, 0, "", "", "", "", 0, 0, false);
@@ -279,7 +280,7 @@ void combat::Game()
 
     if(PartieLancer)
     {
-
+        CheckLaPartie();
     }
 
     // Menu du combat
@@ -323,9 +324,28 @@ void combat::Game()
     }
     cout << "Inventaire (item) / Se proteger (protect) *" << endl;
     cout << BaseSetsss << endl << BaseSetsss << endl;
-    string test = "";
-    cin >> test;
+    cin >> ChoixMenu;
 
+    if(ChoixMenu == "Attack" || ChoixMenu == "attack")
+    {
+
+    }
+    else if (ChoixMenu == "Magie" || ChoixMenu == "magie" || ChoixMenu == "Force" || ChoixMenu == "force")
+    {
+
+    }
+    else if (ChoixMenu == "Item" || ChoixMenu == "item")
+    {
+
+    }
+    else if (ChoixMenu == "Protect" || ChoixMenu == "protect")
+    {
+
+    }
+    else
+    {
+        Game();
+    }
    // Game();
 
 

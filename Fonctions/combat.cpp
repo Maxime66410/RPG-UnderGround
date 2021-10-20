@@ -331,7 +331,7 @@ void combat::Speciale()     //  La fonction pour faire sont spéciale sur l'enem
 {
     srand (time(NULL));
 
-    int Chance_De_Reussite = rand() % 3 + 1;
+    int Chance_De_Reussite = rand() % 5 + 1; // Une chance sur cing de réussir a faire un coup critique
 
     cout << BaseSetsss << endl << BaseSetsss << endl;
     cout << BaseSet2s << endl << BaseSet2s << endl;
@@ -396,6 +396,136 @@ void combat::Speciale()     //  La fonction pour faire sont spéciale sur l'enem
     Sleep(5000);
 
     Game();
+}
+
+void combat::Inventaire()
+{
+    string ChoixItems = "";
+
+    cout << BaseSetsss << endl << BaseSetsss << endl;
+    cout << BaseSet2s << endl << BaseSet2s << endl;
+
+    cout << "*                          Potion de Soins : " << jc_PotionDeSoins << "                          *" << endl << "*                          Potion de Attaque+ : " << jc_PotionDeForce << "                          *" << endl;
+
+    cout << BaseSet2s << endl << BaseSet2s << endl;
+    cout << BaseSetsss << endl << BaseSetsss << endl;
+    cout << "Pour valider une potion tapez le nom de la potion (tapez '-' pour chaque espace du nom de la potion [Ex : Potion-de-vision]), si non tapez 'Retour', pour revenir au menu" << endl << "> ";
+
+    cin >> ChoixItems;
+
+    if(ChoixItems == "Potion-de-Soins" || ChoixItems == "potion-de-soins")
+    {
+        if(jc_PotionDeSoins != 0)
+        {
+            if(jc_ClasseJoueur == "Mage" || jc_ClasseJoueur == "mage" || jc_ClasseJoueur == "Archer" || jc_ClasseJoueur == "Archer")
+            {
+                system("cls");
+                cout << BaseSetsss << endl << BaseSetsss << endl;
+                cout << BaseSet2s << endl << BaseSet2s << endl;
+                magie_HeroJoueur.utiliserObjets("Potion de Soins");
+                cout << BaseSet2s << endl << BaseSet2s << endl;
+                if(TypeDeMonstree == "Zombie" || TypeDeMonstree == "Araignee")
+                {
+                    force_Monstre.Attaquer(magie_HeroJoueur);
+                }
+                else
+                {
+                    magie_Monstre.Attaquer(magie_HeroJoueur);
+                }
+                cout << BaseSet2s << endl << BaseSet2s << endl;
+                cout << BaseSetsss << endl << BaseSetsss << endl;
+                Sleep(5000);
+                Game();
+            }
+            else
+            {
+                system("cls");
+                cout << BaseSetsss << endl << BaseSetsss << endl;
+                cout << BaseSet2s << endl << BaseSet2s << endl;
+                force_HeroJoueur.utiliserObjets("Potion de Soins");
+                cout << BaseSet2s << endl << BaseSet2s << endl;
+                if(TypeDeMonstree == "Zombie" || TypeDeMonstree == "Araignee")
+                {
+                    force_Monstre.Attaquer(force_HeroJoueur);
+                }
+                else
+                {
+                    magie_Monstre.Attaquer(force_HeroJoueur);
+                }
+                cout << BaseSet2s << endl << BaseSet2s << endl;
+                cout << BaseSetsss << endl << BaseSetsss << endl;
+                Sleep(5000);
+                Game();
+            }
+        }
+        else
+        {
+            cout << "Potion de Soins insuffisant" << endl;
+            Sleep(2000);
+            Inventaire();
+        }
+    }
+    else if (ChoixItems == "Potion-de-Attaque+" || ChoixItems == "potion-de-attaque+")
+    {
+        if(jc_PotionDeForce != 0)
+        {
+            if(jc_ClasseJoueur == "Mage" || jc_ClasseJoueur == "mage" || jc_ClasseJoueur == "Archer" || jc_ClasseJoueur == "Archer")
+            {
+                system("cls");
+                cout << BaseSetsss << endl << BaseSetsss << endl;
+                cout << BaseSet2s << endl << BaseSet2s << endl;
+                magie_HeroJoueur.utiliserObjets("Potion de Attaque+");
+                cout << BaseSet2s << endl << BaseSet2s << endl;
+                if(TypeDeMonstree == "Zombie" || TypeDeMonstree == "Araignee")
+                {
+                    force_Monstre.Attaquer(magie_HeroJoueur);
+                }
+                else
+                {
+                    magie_Monstre.Attaquer(magie_HeroJoueur);
+                }
+                cout << BaseSet2s << endl << BaseSet2s << endl;
+                cout << BaseSetsss << endl << BaseSetsss << endl;
+                Sleep(5000);
+                Game();
+            }
+            else
+            {
+                system("cls");
+                cout << BaseSetsss << endl << BaseSetsss << endl;
+                cout << BaseSet2s << endl << BaseSet2s << endl;
+                force_HeroJoueur.utiliserObjets("Potion de Attaque+");
+                cout << BaseSet2s << endl << BaseSet2s << endl;
+                if(TypeDeMonstree == "Zombie" || TypeDeMonstree == "Araignee")
+                {
+                    force_Monstre.Attaquer(force_HeroJoueur);
+                }
+                else
+                {
+                    magie_Monstre.Attaquer(force_HeroJoueur);
+                }
+                cout << BaseSet2s << endl << BaseSet2s << endl;
+                cout << BaseSetsss << endl << BaseSetsss << endl;
+                Sleep(5000);
+                Game();
+            }
+        }
+        else
+        {
+            cout << "Potion de Force insuffisant" << endl;
+            Sleep(2000);
+            Inventaire();
+        }
+    }
+    else if (ChoixItems == "Retour" || ChoixItems == "retour")
+    {
+        Game();
+    }
+    else
+    {
+        Inventaire();
+    }
+    Sleep(4000);
 }
 
 void combat::Game()
@@ -471,7 +601,8 @@ void combat::Game()
     }
     else if (ChoixMenu == "Item" || ChoixMenu == "item")
     {
-
+        system("cls");
+        Inventaire();
     }
     else if (ChoixMenu == "Protect" || ChoixMenu == "protect")
     {

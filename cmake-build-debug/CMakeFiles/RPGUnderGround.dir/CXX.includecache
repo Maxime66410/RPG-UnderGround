@@ -30,6 +30,34 @@ stdlib.h
 time.h
 -
 
+D:/GitHub/RPG-UnderGround/Fonctions/heros.cpp
+../Header/heros.h
+D:/GitHub/RPG-UnderGround/Header/heros.h
+iostream
+-
+string
+-
+stdlib.h
+-
+
+D:/GitHub/RPG-UnderGround/Fonctions/navigation.cpp
+../Header/navigation.h
+D:/GitHub/RPG-UnderGround/Header/navigation.h
+../Header/sauvegarder.h
+D:/GitHub/RPG-UnderGround/Header/sauvegarder.h
+../Header/magasin.h
+D:/GitHub/RPG-UnderGround/Header/magasin.h
+../Header/combat.h
+D:/GitHub/RPG-UnderGround/Header/combat.h
+iostream
+-
+string
+-
+fstream
+-
+iterator
+-
+
 D:/GitHub/RPG-UnderGround/Header/combat.h
 
 D:/GitHub/RPG-UnderGround/Header/force.h
@@ -40,11 +68,19 @@ D:/GitHub/RPG-UnderGround/Header/heros.h
 iostream
 -
 
+D:/GitHub/RPG-UnderGround/Header/magasin.h
+
 D:/GitHub/RPG-UnderGround/Header/magie.h
 heros.h
 D:/GitHub/RPG-UnderGround/Header/heros.h
 
 D:/GitHub/RPG-UnderGround/Header/navigation.h
 iterator
+-
+
+D:/GitHub/RPG-UnderGround/Header/sauvegarder.h
+iostream
+-
+string
 -
 

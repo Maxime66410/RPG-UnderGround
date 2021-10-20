@@ -81,10 +81,12 @@ void heros::utiliserObjets(std::string objet) // Méthode qui permet de utiliser
     if(objet == "Potion de Soins" || objet == "potion de soins")
     {
         m_HeroVie += 50;
+        cout << "*             Vous avez obtenu +50 de vie bonus !             *" << endl;
     }
     else if(objet == "Potion de Attaque+" || objet == "potion de attaque+")
     {
         m_HeroForce += 15;
+        cout << "*             Vous avez obtenu +15 de force bonus !             *" << endl;
     }
 }
 

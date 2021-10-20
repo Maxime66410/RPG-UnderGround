@@ -17,6 +17,8 @@ D:/GitHub/RPG-UnderGround/Header/heros.h
 D:/GitHub/RPG-UnderGround/Header/magie.h
 ../Header/force.h
 D:/GitHub/RPG-UnderGround/Header/force.h
+../Header/sauvegarder.h
+D:/GitHub/RPG-UnderGround/Header/sauvegarder.h
 iostream
 -
 Windows.h
@@ -46,5 +48,11 @@ D:/GitHub/RPG-UnderGround/Header/heros.h
 
 D:/GitHub/RPG-UnderGround/Header/navigation.h
 iterator
+-
+
+D:/GitHub/RPG-UnderGround/Header/sauvegarder.h
+iostream
+-
+string
 -
 

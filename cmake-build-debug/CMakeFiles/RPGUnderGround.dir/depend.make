@@ -7,7 +7,8 @@ CMakeFiles/RPGUnderGround.dir/Fonctions/combat.cpp.obj: \
  ../Header/force.h \
  ../Header/heros.h \
  ../Header/magie.h \
- ../Header/navigation.h
+ ../Header/navigation.h \
+ ../Header/sauvegarder.h
 CMakeFiles/RPGUnderGround.dir/Fonctions/force.cpp.obj: \
  ../Fonctions/force.cpp \
  ../Header/force.h \

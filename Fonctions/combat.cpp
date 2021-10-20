@@ -3,6 +3,7 @@
 #include "../Header/heros.h"
 #include "../Header/magie.h"
 #include "../Header/force.h"
+#include "../Header/sauvegarder.h"
 #include <iostream>
 #include <Windows.h>
 #include <string>
@@ -51,6 +52,7 @@ string BaseSetsss = "***********************************************************
 string BaseSet2s = "*                                                                                *";
 bool PartieLancer(false);
 string ChoixMenu = "";
+sauvegarder LaSauvegarde; // Ma Fonction Sauvegarder
 
 // Heros
 magie magie_HeroJoueur("", 0, 0, "", "", "", "", 0, 0, false);
@@ -259,7 +261,15 @@ void combat::CheckLaPartie()    // Fonction qui regarde les statistique de la pa
 
 void combat::SiLeJoueurAPerdu() // La fonction lancer si le joueur Perd
 {
-    cout << "Joueur a Perdu" << endl;
+    cout << BaseSetsss << endl << BaseSetsss << endl;
+    cout << BaseSet2s << endl << BaseSet2s << endl;
+    cout << "*                       Vous avez perdu ! *JOUEUR ELEMINER*                      *" << endl;
+    cout << "*            Retour au dernier point de sauvegarde dans 5 secondes...            *" << endl;
+    cout << BaseSet2s << endl << BaseSet2s << endl;
+    cout << BaseSetsss << endl << BaseSetsss << endl;
+    Sleep(5000);
+    system("cls");
+    LaSauvegarde.MenuSauvegarde(" ", 0, 0, " ", " ", " ", " ", 0, 0);
 }
 
 void combat::SiLeJoueurAGagner() // La fonction lancer si le joueur Gagne

@@ -297,27 +297,35 @@ void combat::Attaquer() // La fonction qui permet de faire attaquer le joueur et
 
     cout << endl << BaseSet2s << endl << BaseSet2s << endl;
 
-    if(TypeDeMonstree == "Zombie" || TypeDeMonstree == "Araignee")
+    if(!jc_ProtegerJoueur)
     {
-        if(jc_ClasseJoueur == "Mage" || jc_ClasseJoueur == "mage" || jc_ClasseJoueur == "Archer" || jc_ClasseJoueur == "Archer")
+        if(TypeDeMonstree == "Zombie" || TypeDeMonstree == "Araignee")
         {
-            force_Monstre.Attaquer(magie_HeroJoueur);
+            if(jc_ClasseJoueur == "Mage" || jc_ClasseJoueur == "mage" || jc_ClasseJoueur == "Archer" || jc_ClasseJoueur == "Archer")
+            {
+                force_Monstre.Attaquer(magie_HeroJoueur);
+            }
+            else
+            {
+                force_Monstre.Attaquer(force_HeroJoueur);
+            }
         }
         else
         {
-            force_Monstre.Attaquer(force_HeroJoueur);
+            if(jc_ClasseJoueur == "Mage" || jc_ClasseJoueur == "mage" || jc_ClasseJoueur == "Archer" || jc_ClasseJoueur == "Archer")
+            {
+                magie_Monstre.Attaquer(magie_HeroJoueur);
+            }
+            else
+            {
+                magie_Monstre.Attaquer(force_HeroJoueur);
+            }
         }
     }
     else
     {
-        if(jc_ClasseJoueur == "Mage" || jc_ClasseJoueur == "mage" || jc_ClasseJoueur == "Archer" || jc_ClasseJoueur == "Archer")
-        {
-            magie_Monstre.Attaquer(magie_HeroJoueur);
-        }
-        else
-        {
-            magie_Monstre.Attaquer(force_HeroJoueur);
-        }
+        cout << "                          L'ennemie n'a pas pu vous attaquer                          *" << endl;
+        jc_ProtegerJoueur = false;
     }
 
     cout << endl << BaseSet2s << endl << BaseSet2s << endl;
@@ -368,27 +376,35 @@ void combat::Speciale()     //  La fonction pour faire sont spéciale sur l'enem
 
     cout << endl << BaseSet2s << endl << BaseSet2s << endl;
 
-    if(TypeDeMonstree == "Zombie" || TypeDeMonstree == "Araignee")
+    if(!jc_ProtegerJoueur)
     {
-        if(jc_ClasseJoueur == "Mage" || jc_ClasseJoueur == "mage" || jc_ClasseJoueur == "Archer" || jc_ClasseJoueur == "Archer")
+        if(TypeDeMonstree == "Zombie" || TypeDeMonstree == "Araignee")
         {
-            force_Monstre.Attaquer(magie_HeroJoueur);
+            if(jc_ClasseJoueur == "Mage" || jc_ClasseJoueur == "mage" || jc_ClasseJoueur == "Archer" || jc_ClasseJoueur == "Archer")
+            {
+                force_Monstre.Attaquer(magie_HeroJoueur);
+            }
+            else
+            {
+                force_Monstre.Attaquer(force_HeroJoueur);
+            }
         }
         else
         {
-            force_Monstre.Attaquer(force_HeroJoueur);
+            if(jc_ClasseJoueur == "Mage" || jc_ClasseJoueur == "mage" || jc_ClasseJoueur == "Archer" || jc_ClasseJoueur == "Archer")
+            {
+                magie_Monstre.Attaquer(magie_HeroJoueur);
+            }
+            else
+            {
+                magie_Monstre.Attaquer(force_HeroJoueur);
+            }
         }
     }
     else
     {
-        if(jc_ClasseJoueur == "Mage" || jc_ClasseJoueur == "mage" || jc_ClasseJoueur == "Archer" || jc_ClasseJoueur == "Archer")
-        {
-            magie_Monstre.Attaquer(magie_HeroJoueur);
-        }
-        else
-        {
-            magie_Monstre.Attaquer(force_HeroJoueur);
-        }
+        cout << "                        L'ennemie n'a pas pu vous attaquer                       *" << endl;
+        jc_ProtegerJoueur = false;
     }
 
     cout << endl << BaseSet2s << endl << BaseSet2s << endl;
@@ -528,6 +544,48 @@ void combat::Inventaire()
     Sleep(4000);
 }
 
+void combat::Proteger() // Protection du joueur
+{
+    srand (time(NULL));
+
+    int Chance_De_Reussite = rand() % 4 + 1; // Chance de pouvoir ce protéger corectement
+
+    if(!jc_ProtegerJoueur)
+    {
+        if(Chance_De_Reussite == 2)
+        {
+            cout << BaseSetsss << endl << BaseSetsss << endl;
+            cout << BaseSet2s << endl << BaseSet2s << endl;
+            cout << "*             Protection activer vous etes immuniser pendant un tour !            *" << endl;
+            cout << BaseSet2s << endl << BaseSet2s << endl;
+            cout << BaseSetsss << endl << BaseSetsss << endl;
+            jc_ProtegerJoueur = true;
+            Sleep(5000);
+            Game();
+        }
+        else
+        {
+            cout << BaseSetsss << endl << BaseSetsss << endl;
+            cout << BaseSet2s << endl << BaseSet2s << endl;
+            cout << "*             Vous n'avez pas reussi a vous proteger !             *" << endl;
+            cout << BaseSet2s << endl << BaseSet2s << endl;
+            cout << BaseSetsss << endl << BaseSetsss << endl;
+            Sleep(5000);
+            Game();
+        }
+    }
+    else
+    {
+        cout << BaseSetsss << endl << BaseSetsss << endl;
+        cout << BaseSet2s << endl << BaseSet2s << endl;
+        cout << "*             Vous vous proteger deja !!             *" << endl;
+        cout << BaseSet2s << endl << BaseSet2s << endl;
+        cout << BaseSetsss << endl << BaseSetsss << endl;
+        Sleep(5000);
+        Game();
+    }
+}
+
 void combat::Game()
 {
     system("cls");
@@ -606,7 +664,8 @@ void combat::Game()
     }
     else if (ChoixMenu == "Protect" || ChoixMenu == "protect")
     {
-
+        system("cls");
+        Proteger();
     }
     else
     {

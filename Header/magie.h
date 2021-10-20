@@ -10,9 +10,7 @@
 class magie : public heros{
 public:
     magie(std::string nomheros, int vieheros, int monnaieheros, std::string classeheros, std::string especeheros, std::string fonctionsheros, std::string armeheros, int forceheros, int expheros, bool protegerheros);
-
-private:
-    void m_magie(heros &cible);
+    void Specmagie(heros &cible);
 };
 
 

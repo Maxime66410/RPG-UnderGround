@@ -19,6 +19,8 @@ D:/GitHub/RPG-UnderGround/Header/magie.h
 D:/GitHub/RPG-UnderGround/Header/force.h
 iostream
 -
+Windows.h
+-
 string
 -
 fstream
@@ -26,16 +28,6 @@ fstream
 stdlib.h
 -
 time.h
--
-
-D:/GitHub/RPG-UnderGround/Fonctions/heros.cpp
-../Header/heros.h
-D:/GitHub/RPG-UnderGround/Header/heros.h
-iostream
--
-string
--
-stdlib.h
 -
 
 D:/GitHub/RPG-UnderGround/Header/combat.h

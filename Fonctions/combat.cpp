@@ -4,6 +4,7 @@
 #include "../Header/magie.h"
 #include "../Header/force.h"
 #include <iostream>
+#include <Windows.h>
 #include <string>
 #include <fstream>
 #include <stdlib.h>
@@ -266,8 +267,140 @@ void combat::SiLeJoueurAGagner() // La fonction lancer si le joueur Gagne
     cout << "Joueur a Gagner" << endl;
 }
 
+void combat::Attaquer() // La fonction qui permet de faire attaquer le joueur et l'IA
+{
+    cout << BaseSetsss << endl << BaseSetsss << endl;
+    cout << BaseSet2s << endl << BaseSet2s << endl;
+
+    if(jc_ClasseJoueur == "Mage" || jc_ClasseJoueur == "mage" || jc_ClasseJoueur == "Archer" || jc_ClasseJoueur == "Archer")
+    {
+        if(TypeDeMonstree == "Zombie" || TypeDeMonstree == "Araignee")
+        {
+            magie_HeroJoueur.Attaquer(force_Monstre);
+        }
+        else
+        {
+            magie_HeroJoueur.Attaquer(magie_Monstre);
+        }
+    }
+    else
+    {
+        if(TypeDeMonstree == "Zombie" || TypeDeMonstree == "Araignee")
+        {
+            force_HeroJoueur.Attaquer(force_Monstre);
+        }
+        else
+        {
+            force_HeroJoueur.Attaquer(magie_Monstre);
+        }
+    }
+
+    cout << endl << BaseSet2s << endl << BaseSet2s << endl;
+
+    if(TypeDeMonstree == "Zombie" || TypeDeMonstree == "Araignee")
+    {
+        if(jc_ClasseJoueur == "Mage" || jc_ClasseJoueur == "mage" || jc_ClasseJoueur == "Archer" || jc_ClasseJoueur == "Archer")
+        {
+            force_Monstre.Attaquer(magie_HeroJoueur);
+        }
+        else
+        {
+            force_Monstre.Attaquer(force_HeroJoueur);
+        }
+    }
+    else
+    {
+        if(jc_ClasseJoueur == "Mage" || jc_ClasseJoueur == "mage" || jc_ClasseJoueur == "Archer" || jc_ClasseJoueur == "Archer")
+        {
+            magie_Monstre.Attaquer(magie_HeroJoueur);
+        }
+        else
+        {
+            magie_Monstre.Attaquer(force_HeroJoueur);
+        }
+    }
+
+    cout << endl << BaseSet2s << endl << BaseSet2s << endl;
+    cout << BaseSetsss << endl << BaseSetsss << endl;
+    Sleep(5000);
+
+    Game();
+}
+
+void combat::Speciale()     //  La fonction pour faire sont spéciale sur l'enemie
+{
+    srand (time(NULL));
+
+    int Chance_De_Reussite = rand() % 3 + 1;
+
+    cout << BaseSetsss << endl << BaseSetsss << endl;
+    cout << BaseSet2s << endl << BaseSet2s << endl;
+
+    if(Chance_De_Reussite == 2)
+    {
+        if(jc_ClasseJoueur == "Mage" || jc_ClasseJoueur == "mage" || jc_ClasseJoueur == "Archer" || jc_ClasseJoueur == "Archer")
+        {
+            if(TypeDeMonstree == "Zombie" || TypeDeMonstree == "Araignee")
+            {
+                magie_HeroJoueur.Specmagie(force_Monstre);
+            }
+            else
+            {
+                magie_HeroJoueur.Specmagie(magie_Monstre);
+            }
+        }
+        else
+        {
+            if(TypeDeMonstree == "Zombie" || TypeDeMonstree == "Araignee")
+            {
+                force_HeroJoueur.utilisationForce(force_Monstre);
+            }
+            else
+            {
+                force_HeroJoueur.utilisationForce(magie_Monstre);
+            }
+        }
+    }
+    else
+    {
+        cout << "             Vous avez rater votre attaque speciale...";
+    }
+
+    cout << endl << BaseSet2s << endl << BaseSet2s << endl;
+
+    if(TypeDeMonstree == "Zombie" || TypeDeMonstree == "Araignee")
+    {
+        if(jc_ClasseJoueur == "Mage" || jc_ClasseJoueur == "mage" || jc_ClasseJoueur == "Archer" || jc_ClasseJoueur == "Archer")
+        {
+            force_Monstre.Attaquer(magie_HeroJoueur);
+        }
+        else
+        {
+            force_Monstre.Attaquer(force_HeroJoueur);
+        }
+    }
+    else
+    {
+        if(jc_ClasseJoueur == "Mage" || jc_ClasseJoueur == "mage" || jc_ClasseJoueur == "Archer" || jc_ClasseJoueur == "Archer")
+        {
+            magie_Monstre.Attaquer(magie_HeroJoueur);
+        }
+        else
+        {
+            magie_Monstre.Attaquer(force_HeroJoueur);
+        }
+    }
+
+    cout << endl << BaseSet2s << endl << BaseSet2s << endl;
+    cout << BaseSetsss << endl << BaseSetsss << endl;
+    Sleep(5000);
+
+    Game();
+}
+
 void combat::Game()
 {
+    system("cls");
     if(!DonneerDejaCharger)  // Initialisation de la partie
     {
         InitialisationGame();
@@ -328,11 +461,13 @@ void combat::Game()
 
     if(ChoixMenu == "Attack" || ChoixMenu == "attack")
     {
-
+        system("cls");
+        Attaquer();
     }
-    else if (ChoixMenu == "Magie" || ChoixMenu == "magie" || ChoixMenu == "Force" || ChoixMenu == "force")
+    else if (ChoixMenu == "Magie" || ChoixMenu == "magie" || ChoixMenu == "Coup" || ChoixMenu == "coup" || ChoixMenu == "Force" || ChoixMenu == "force")
     {
-
+        system("cls");
+        Speciale();
     }
     else if (ChoixMenu == "Item" || ChoixMenu == "item")
     {

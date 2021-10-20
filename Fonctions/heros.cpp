@@ -51,6 +51,7 @@ void heros::Attaquer(heros &cible)  //  Méthode pour attaquer un monstre
     if(cible.m_HerosEspece != "humain" || cible.m_HerosEspece != "Humain" || cible.m_HerosEspece != "humains" || cible.m_HerosEspece != "Humains")
     {
         cible.DiminutionVie(m_HeroForce);
+        cout << "*             " << m_HeroNom << " Attaque " << cible.m_HeroNom << " | Degat Recu : " << m_HeroForce << "             *";
     }
     else
     {

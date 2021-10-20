@@ -13,7 +13,8 @@ magie::magie(std::string nomheros, int vieheros, int monnaieheros, std::string c
 
 }
 
-void magie::m_magie(heros &cible)
+void magie::Specmagie(heros &cible)
 {
     cible.DiminutionVie(180);
+    cout << "*             " << m_HeroNom << " Utilise Magie donnant Degat : " << 180 << "             *";
 }

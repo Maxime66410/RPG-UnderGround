@@ -13,7 +13,8 @@ force::force(std::string nomheros, int vieheros, int monnaieheros, std::string c
 
 }
 
-void force::m_utilisationForce(heros &cible)
+void force::utilisationForce(heros &cible)
 {
     cible.DiminutionVie(120);
+    cout << "*             " << m_HeroNom << " Utilise Force Speciale donnant Degat : " << 120 << "             *";
 }

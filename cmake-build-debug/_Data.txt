@@ -1,9 +1,10 @@
 Max
-150
-10
-Mage
+250
+0
+Guerrier
 Humain
 Chomeur
-Sans
+Sans-Arme
+7
 0
-50
+0

@@ -86,7 +86,7 @@ int preparation::SauvegardeInitialisation() // Sauvegarde du premier data
 
     if(SauvegardeFichier && SauvegardeTour)
     {
-        SauvegardeFichier << NomJoueur << endl << VieTemporaire << endl << 0 << endl << ClasseJoueur << endl << "Humain" << endl << "Chomeur" << endl << ArmeTemporaire << endl << ForceTemporaire << endl << 0 << endl << false << endl;
+        SauvegardeFichier << NomJoueur << endl << VieTemporaire << endl << 50 << endl << ClasseJoueur << endl << "Humain" << endl << "Chomeur" << endl << ArmeTemporaire << endl << ForceTemporaire << endl << 0 << endl << false << endl;
         SauvegardeTour << 0 << endl;
         SauvegardeInventaire << 0 << endl << 0 << endl;
         Lnavigations.MenuNavigation();

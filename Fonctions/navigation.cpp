@@ -2,6 +2,7 @@
 #include "../Header/sauvegarder.h"
 #include "../Header/magasin.h"
 #include "../Header/combat.h"
+#include "../Header/preparation.h"
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -32,6 +33,7 @@ int tempTour = 0;   // variable temporaire pour le tour
 sauvegarder LaSauvegarder;
 magasin LeMagasin;
 combat LeCombat;
+preparation LaPreparation;
 
 string navigation::ChargerLaSauvegarde()
 {
@@ -103,42 +105,70 @@ string navigation::ChargerLaSauvegarde()
 
 void navigation::MenuNavigation()
 {
+    system("cls");
     ChargerLaSauvegarde();
 
-    string Choix = "";
-
-    cout << BaseSet << endl << BaseSet << endl;
-    cout << BaseSet2 << endl << BaseSet2 << endl;
-    cout << "*** Heros Nom : " << tempNomheros << "    Vie : " << tempVieHeros << "    Monnaie : " << tempMonnaie << " ***" << endl ;
-    cout << "*                   Tour : " << tempTour << " / 20                        *" << endl;
-    cout << BaseSet2 << endl << BaseSet2 << endl;
-    cout << "*                    Combat (combat)                     *" << endl;
-    cout << BaseSet2 << endl;
-    cout << "*                    Magasin (shop)                      *" << endl;
-    cout << BaseSet2 << endl;
-    cout << "*                   Sauvegarder (save)                   *" << endl;
-    cout << BaseSet2 << endl << BaseSet << endl << BaseSet << endl;
-
-    cin >> Choix;
-
-    if(Choix == "Combat" || Choix == "combat")
+    if(tempTour != 20)
     {
-        system("cls");
-        LeCombat.Game();
-    }
-    else if (Choix == "Shop" || Choix == "shop")
-    {
-        system("cls");
-        LeMagasin.MenuShop();
-    }
-    else if(Choix == "Save" || Choix == "save")
-    {
-        system("cls");
-        LaSauvegarder.MenuSauvegarde(tempNomheros, tempVieHeros, tempMonnaie, tempClasse, tempEspece, tempFonctions, tempArme, tempForce, tempExp);
+        string Choix = "";
+
+        cout << BaseSet << endl << BaseSet << endl;
+        cout << BaseSet2 << endl << BaseSet2 << endl;
+        cout << "*** Heros Nom : " << tempNomheros << "    Vie : " << tempVieHeros << "    Monnaie : " << tempMonnaie << " ***" << endl ;
+        cout << "*                   Tour : " << tempTour << " / 20                        *" << endl;
+        cout << BaseSet2 << endl << BaseSet2 << endl;
+        cout << "*                    Combat (combat)                     *" << endl;
+        cout << BaseSet2 << endl;
+        cout << "*                    Magasin (shop)                      *" << endl;
+        cout << BaseSet2 << endl;
+        cout << "*                   Sauvegarder (save)                   *" << endl;
+        cout << BaseSet2 << endl << BaseSet << endl << BaseSet << endl;
+
+        cin >> Choix;
+
+        if(Choix == "Combat" || Choix == "combat")
+        {
+            system("cls");
+            LeCombat.Game();
+        }
+        else if (Choix == "Shop" || Choix == "shop")
+        {
+            system("cls");
+            LeMagasin.MenuShop();
+        }
+        else if(Choix == "Save" || Choix == "save")
+        {
+            system("cls");
+            LaSauvegarder.MenuSauvegarde(tempNomheros, tempVieHeros, tempMonnaie, tempClasse, tempEspece, tempFonctions, tempArme, tempForce, tempExp);
+        }
+        else
+        {
+            system("cls");
+            MenuNavigation();
+        }
     }
     else
     {
-        system("cls");
-        MenuNavigation();
+        string ChoixTemp = "";
+
+        cout << BaseSet << endl << BaseSet << endl;
+        cout << BaseSet2 << endl << BaseSet2 << endl;
+        cout << "*                    Vous avez gagner !                  *" << endl;
+        cout << BaseSet2 << endl;
+        cout << "*    Vous pouvez recommencer la partie (continuer) ou    *" << endl;
+        cout << "*                     quitter (exit)                     *" << endl;
+        cout << BaseSet2 << endl<< BaseSet2 << endl << BaseSet << endl << BaseSet << endl;
+
+        cin >> ChoixTemp;
+
+        if(ChoixTemp == "Continuer" || ChoixTemp == "continuer")
+        {
+            system("cls");
+            LaPreparation.preparationGame();
+        }
+        else
+        {
+            // ferme le programme
+        }
     }
 }

@@ -1,9 +1,10 @@
 Max
-240
-50
+250
+0
 Guerrier
 Humain
 Chomeur
-Sans-Arme
-22
-150
+Epee
+7
+0
+0

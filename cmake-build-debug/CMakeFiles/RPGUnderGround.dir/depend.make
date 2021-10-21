@@ -29,6 +29,7 @@ CMakeFiles/RPGUnderGround.dir/Fonctions/navigation.cpp.obj: \
  ../Header/combat.h \
  ../Header/magasin.h \
  ../Header/navigation.h \
+ ../Header/preparation.h \
  ../Header/sauvegarder.h
 CMakeFiles/RPGUnderGround.dir/Fonctions/preparation.cpp.obj: \
  ../Fonctions/preparation.cpp \

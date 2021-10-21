@@ -32,6 +32,32 @@ stdlib.h
 time.h
 -
 
+D:/GitHub/RPG-UnderGround/Fonctions/force.cpp
+../Header/force.h
+D:/GitHub/RPG-UnderGround/Header/force.h
+stdio.h
+-
+string.h
+-
+
+D:/GitHub/RPG-UnderGround/Fonctions/heros.cpp
+../Header/heros.h
+D:/GitHub/RPG-UnderGround/Header/heros.h
+iostream
+-
+string
+-
+stdlib.h
+-
+
+D:/GitHub/RPG-UnderGround/Fonctions/magie.cpp
+../Header/magie.h
+D:/GitHub/RPG-UnderGround/Header/magie.h
+stdio.h
+-
+string.h
+-
+
 D:/GitHub/RPG-UnderGround/Header/combat.h
 
 D:/GitHub/RPG-UnderGround/Header/force.h

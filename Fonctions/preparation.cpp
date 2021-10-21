@@ -57,31 +57,36 @@ int preparation::SauvegardeInitialisation() // Sauvegarde du premier data
     ofstream SauvegardeInventaire(NomDuFichierInv.c_str());
     int ForceTemporaire = 0;
     int VieTemporaire = 0;
+    string ArmeTemporaire = "";
 
     if(ClasseJoueur == "Archer" || ClasseJoueur == "archer")
     {
         ForceTemporaire = 5;
         VieTemporaire = 100;
+        ArmeTemporaire = "Arc";
     }
     else if(ClasseJoueur == "Guerrier" || ClasseJoueur == "guerrier")
     {
         ForceTemporaire = 7;
         VieTemporaire = 250;
+        ArmeTemporaire = "Epee";
     }
     else if(ClasseJoueur == "Mage" || ClasseJoueur == "mage")
     {
         ForceTemporaire = 6;
         VieTemporaire = 85;
+        ArmeTemporaire = "Baton de Magie";
     }
     else if(ClasseJoueur == "Chevalier" || ClasseJoueur == "chevalier")
     {
         ForceTemporaire = 8;
         VieTemporaire = 350;
+        ArmeTemporaire = "Grande Epee";
     }
 
     if(SauvegardeFichier && SauvegardeTour)
     {
-        SauvegardeFichier << NomJoueur << endl << VieTemporaire << endl << 0 << endl << ClasseJoueur << endl << "Humain" << endl << "Chomeur" << endl << "Sans-Arme" << endl << ForceTemporaire << endl << 0 << endl << false << endl;
+        SauvegardeFichier << NomJoueur << endl << VieTemporaire << endl << 0 << endl << ClasseJoueur << endl << "Humain" << endl << "Chomeur" << endl << ArmeTemporaire << endl << ForceTemporaire << endl << 0 << endl << false << endl;
         SauvegardeTour << 0 << endl;
         SauvegardeInventaire << 0 << endl << 0 << endl;
         Lnavigations.MenuNavigation();

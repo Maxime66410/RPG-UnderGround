@@ -1,9 +1,9 @@
 Max
-150
-0
+240
+50
 Guerrier
 Humain
 Chomeur
 Sans-Arme
-7
-0
+22
+150

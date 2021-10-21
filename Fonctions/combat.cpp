@@ -53,6 +53,7 @@ string BaseSet2s = "*                                                           
 bool PartieLancer(false);
 string ChoixMenu = "";
 sauvegarder LaSauvegarde; // Ma Fonction Sauvegarder
+navigation LaNagivation; // Ma Fonction Navigation
 
 // Heros
 magie magie_HeroJoueur("", 0, 0, "", "", "", "", 0, 0, false);
@@ -261,6 +262,7 @@ void combat::CheckLaPartie()    // Fonction qui regarde les statistique de la pa
 
 void combat::SiLeJoueurAPerdu() // La fonction lancer si le joueur Perd
 {
+    system("cls");
     cout << BaseSetsss << endl << BaseSetsss << endl;
     cout << BaseSet2s << endl << BaseSet2s << endl;
     cout << "*                       Vous avez perdu ! *JOUEUR ELEMINER*                      *" << endl;
@@ -274,7 +276,55 @@ void combat::SiLeJoueurAPerdu() // La fonction lancer si le joueur Perd
 
 void combat::SiLeJoueurAGagner() // La fonction lancer si le joueur Gagne
 {
-    cout << "Joueur a Gagner" << endl;
+    system("cls");
+    sauvegarderLesData();
+    cout << BaseSetsss << endl << BaseSetsss << endl;
+    cout << BaseSet2s << endl << BaseSet2s << endl;
+    cout << "*                      Vous avez Gagner ! *ENNEMIE ELEMINER*                     *" << endl;
+    cout << "*                        Retour au Menu dans 5 secondes...                       *" << endl;
+    cout << BaseSet2s << endl << BaseSet2s << endl;
+    cout << BaseSetsss << endl << BaseSetsss << endl;
+    Sleep(5000);
+    LaNagivation.MenuNavigation();
+    system("cls");
+}
+
+void combat::sauvegarderLesData() // La fonction qui permet de sauvegarder si le joueur gagne.
+{
+    c_FichierDuJoueur.open(c_FichierDuNomJoueur.c_str(), ios::out | ios::trunc);
+    c_FichierDuTour.open(c_FichierNomDesTour.c_str(), ios::out | ios::trunc);
+    c_FichierInventaire.open(c_FichierDuNomInventaire.c_str(), ios::out | ios::trunc);
+
+    jc_MonnaieJoueur += 50;
+    jc_ExpJoueur += 150;
+    jc_tour += 1;
+    int tempVie = 0;
+    int tempForce = 0;
+    if(jc_ClasseJoueur == "Mage" || jc_ClasseJoueur == "mage" || jc_ClasseJoueur == "Archer" || jc_ClasseJoueur == "Archer")
+    {
+        tempVie = magie_HeroJoueur.m_HeroVie;
+        tempForce = magie_HeroJoueur.m_HeroForce;
+    }
+    else
+    {
+        tempVie = force_HeroJoueur.m_HeroVie;
+        tempForce = force_HeroJoueur.m_HeroForce;
+    }
+
+    if(c_FichierDuJoueur && c_FichierDuTour && c_FichierInventaire)
+    {
+        c_FichierDuJoueur << jc_NomJoueur << endl << tempVie << endl << jc_MonnaieJoueur << endl << jc_ClasseJoueur << endl << jc_EspeceJoueur << endl << jc_FonctionsJoueur << endl << jc_ArmesJoueur << endl << tempForce << endl << jc_ExpJoueur << endl;
+        c_FichierDuTour << jc_tour << endl;
+        c_FichierInventaire << jc_PotionDeSoins << endl << jc_PotionDeForce << endl;
+    }
+    else
+    {
+        cout << "ERREUR : Sauvegarde impossible !" << endl;
+    }
+
+    c_FichierDuJoueur.close();
+    c_FichierDuTour.close();
+    c_FichierInventaire.close();
 }
 
 void combat::Attaquer() // La fonction qui permet de faire attaquer le joueur et l'IA
@@ -449,6 +499,7 @@ void combat::Inventaire()
                 cout << BaseSetsss << endl << BaseSetsss << endl;
                 cout << BaseSet2s << endl << BaseSet2s << endl;
                 magie_HeroJoueur.utiliserObjets("Potion de Soins");
+                jc_PotionDeSoins -= 1;
                 cout << BaseSet2s << endl << BaseSet2s << endl;
                 if(TypeDeMonstree == "Zombie" || TypeDeMonstree == "Araignee")
                 {
@@ -469,6 +520,7 @@ void combat::Inventaire()
                 cout << BaseSetsss << endl << BaseSetsss << endl;
                 cout << BaseSet2s << endl << BaseSet2s << endl;
                 force_HeroJoueur.utiliserObjets("Potion de Soins");
+                jc_PotionDeSoins -= 1;
                 cout << BaseSet2s << endl << BaseSet2s << endl;
                 if(TypeDeMonstree == "Zombie" || TypeDeMonstree == "Araignee")
                 {
@@ -501,6 +553,7 @@ void combat::Inventaire()
                 cout << BaseSetsss << endl << BaseSetsss << endl;
                 cout << BaseSet2s << endl << BaseSet2s << endl;
                 magie_HeroJoueur.utiliserObjets("Potion de Attaque+");
+                jc_PotionDeForce -= 1;
                 cout << BaseSet2s << endl << BaseSet2s << endl;
                 if(TypeDeMonstree == "Zombie" || TypeDeMonstree == "Araignee")
                 {
@@ -521,6 +574,7 @@ void combat::Inventaire()
                 cout << BaseSetsss << endl << BaseSetsss << endl;
                 cout << BaseSet2s << endl << BaseSet2s << endl;
                 force_HeroJoueur.utiliserObjets("Potion de Attaque+");
+                jc_PotionDeForce -= 1;
                 cout << BaseSet2s << endl << BaseSet2s << endl;
                 if(TypeDeMonstree == "Zombie" || TypeDeMonstree == "Araignee")
                 {

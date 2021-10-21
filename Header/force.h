@@ -10,6 +10,7 @@
 class force : public heros {
 public:
     force(std::string nomheros, int vieheros, int monnaieheros, std::string classeheros, std::string especeheros, std::string fonctionsheros, std::string armeheros, int forceheros, int expheros, bool protegerheros);
+    ~force();
     void utilisationForce(heros &cible);
 };
 

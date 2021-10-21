@@ -6,25 +6,53 @@
 
 #IncludeRegexTransform: 
 
-D:/GitHub/RPG-UnderGround/Fonctions/magasin.cpp
-../Header/magasin.h
-D:/GitHub/RPG-UnderGround/Header/magasin.h
+D:/GitHub/RPG-UnderGround/Fonctions/combat.cpp
+../Header/combat.h
+D:/GitHub/RPG-UnderGround/Header/combat.h
 ../Header/navigation.h
 D:/GitHub/RPG-UnderGround/Header/navigation.h
+../Header/heros.h
+D:/GitHub/RPG-UnderGround/Header/heros.h
+../Header/magie.h
+D:/GitHub/RPG-UnderGround/Header/magie.h
+../Header/force.h
+D:/GitHub/RPG-UnderGround/Header/force.h
+../Header/sauvegarder.h
+D:/GitHub/RPG-UnderGround/Header/sauvegarder.h
 iostream
+-
+Windows.h
 -
 string
 -
 fstream
 -
+stdlib.h
+-
 time.h
 -
-Windows.h
+
+D:/GitHub/RPG-UnderGround/Header/combat.h
+
+D:/GitHub/RPG-UnderGround/Header/force.h
+heros.h
+D:/GitHub/RPG-UnderGround/Header/heros.h
+
+D:/GitHub/RPG-UnderGround/Header/heros.h
+iostream
 -
 
-D:/GitHub/RPG-UnderGround/Header/magasin.h
+D:/GitHub/RPG-UnderGround/Header/magie.h
+heros.h
+D:/GitHub/RPG-UnderGround/Header/heros.h
 
 D:/GitHub/RPG-UnderGround/Header/navigation.h
 iterator
+-
+
+D:/GitHub/RPG-UnderGround/Header/sauvegarder.h
+iostream
+-
+string
 -
 

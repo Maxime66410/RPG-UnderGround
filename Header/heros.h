@@ -18,6 +18,7 @@ public:
     int m_HeroForce;
     heros();
     heros(std::string nomhero, int viehero, int monnaiehero, std::string classehero, std::string especeheros, std::string fonctionhero, std::string armehero, int forcehero, int exphero, bool protegerhero);
+    ~heros();
     void DiminutionVie(int vieenmoins);
     void Attaquer(heros &cible);
     void Competence(heros &cible);

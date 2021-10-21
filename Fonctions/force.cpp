@@ -12,6 +12,10 @@ force::force(std::string nomheros, int vieheros, int monnaieheros, std::string c
 {
 
 }
+force::~force()
+{
+
+}
 
 void force::utilisationForce(heros &cible)
 {

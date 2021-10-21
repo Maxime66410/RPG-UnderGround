@@ -285,6 +285,9 @@ void combat::SiLeJoueurAGagner() // La fonction lancer si le joueur Gagne
     cout << BaseSet2s << endl << BaseSet2s << endl;
     cout << BaseSetsss << endl << BaseSetsss << endl;
     Sleep(5000);
+    PartieLancer = false;
+    DonneerDejaCharger = false;
+    ChargementJoueurEtAi = false;
     LaNagivation.MenuNavigation();
     system("cls");
 }
@@ -735,7 +738,5 @@ void combat::Game()
     {
         Game();
     }
-   // Game();
-
 
 }

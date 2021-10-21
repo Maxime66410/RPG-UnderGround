@@ -12,6 +12,10 @@ magie::magie(std::string nomheros, int vieheros, int monnaieheros, std::string c
 {
 
 }
+magie::~magie()
+{
+
+}
 
 void magie::Specmagie(heros &cible)
 {

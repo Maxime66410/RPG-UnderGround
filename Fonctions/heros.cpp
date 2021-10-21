@@ -19,6 +19,10 @@ heros::heros(std::string nomhero, int viehero, int monnaiehero, std::string clas
     m_HeroExp = exphero;
     m_HeroProteger = protegerhero;
 }
+heros::~heros() // Destructeur
+{
+
+}
 
 void heros::DiminutionVie(int vieenmoins)   //  Méthode pour diminuer la vie du joueur
 {
@@ -115,3 +119,4 @@ void heros::afficher() const // Méthode pour afficher les informations du héro
         cout << m_HerosEspece << " > " << m_HeroNom << " : " << m_HeroVie << " / mort";
     }
 }
+

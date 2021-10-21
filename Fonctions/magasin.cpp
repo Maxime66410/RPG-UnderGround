@@ -3,6 +3,8 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <time.h>
+#include <Windows.h>
 
 using namespace std;
 
@@ -36,6 +38,7 @@ navigation LaNavigations;
 
 void magasin::Acheter() // Méthode pour Acheter les objets du magasin
 {
+    system("cls");
     string Acheterchoix = "";
     string confirmChoix = "";
 
@@ -62,11 +65,13 @@ void magasin::Acheter() // Méthode pour Acheter les objets du magasin
             {
                 tempPotionHealth += 1;
                 tempMonnaies -= 15;
+                Sleep(1000);
                 Acheter();
             }
             else
             {
                 cout << "Vous avez pas assez d'argent pour acheter une potion de Soins" << endl;
+                Sleep(1000);
                 Acheter();
             }
         }
@@ -87,11 +92,13 @@ void magasin::Acheter() // Méthode pour Acheter les objets du magasin
             {
                 tempPotionForce += 1;
                 tempMonnaies -= 25;
+                Sleep(1000);
                 Acheter();
             }
             else
             {
                 cout << "Vous avez pas assez d'argent pour acheter une potion de Force" << endl;
+                Sleep(1000);
                 Acheter();
             }
         }
@@ -109,13 +116,15 @@ void magasin::Acheter() // Méthode pour Acheter les objets du magasin
 
 void magasin::Vendre() //   Méthode pour vendre les objets de l'inventaire
 {
+    system("cls");
     string vendrechoix = "";
     string confirmChoixvendre = "";
 
     cout << BaseSetss << endl << BaseSetss << endl << BaseSetss2 << endl << BaseSetss2 << endl;
     cout << "*                     Votre inventaire                   *" << endl;
     cout << BaseSetss2 << endl;
-    cout << "*      Potion de Soins : " << tempPotionHealth << "  -  Potion de Force : " << tempPotionForce << "       *" << endl;
+    cout << "*               Potion de Soins (health) : " << tempPotionHealth << "            *" << endl;
+    cout << "*                Potion de Force (force) : " << tempPotionForce << "            *" << endl;
     cout << BaseSetss2 << endl << BaseSetss2 << endl << BaseSetss << endl << BaseSetss << endl;
 
     cin >> vendrechoix;
@@ -131,11 +140,13 @@ void magasin::Vendre() //   Méthode pour vendre les objets de l'inventaire
             {
                 tempMonnaies += 10;
                 tempPotionHealth -= 1;
+                Sleep(1000);
                 Vendre();
             }
             else
             {
                 cout << "Vous n'avais pas assez de Potion de Soins dans votre Inventaire !" << endl;
+                Sleep(1000);
                 Vendre();
             }
         }
@@ -151,11 +162,13 @@ void magasin::Vendre() //   Méthode pour vendre les objets de l'inventaire
             {
                 tempMonnaies += 15;
                 tempPotionForce -= 1;
+                Sleep(1000);
                 Vendre();
             }
             else
             {
                 cout << "Vous n'avais pas assez de Potion de Force dans votre Inventaire !" << endl;
+                Sleep(1000);
                 Vendre();
             }
         }
@@ -269,6 +282,7 @@ void magasin::RetourMenu()  //  Méthode pour fermer le magasin et sauvegarder l
 
 void magasin::MenuShop()    //  Méthode pour ouvrir le menu
 {
+    system("cls");
     ChargerSauvegardes();
 
     string choixShop = "";

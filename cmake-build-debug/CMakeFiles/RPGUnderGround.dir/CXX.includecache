@@ -6,39 +6,25 @@
 
 #IncludeRegexTransform: 
 
-D:/GitHub/RPG-UnderGround/Fonctions/navigation.cpp
-../Header/navigation.h
-D:/GitHub/RPG-UnderGround/Header/navigation.h
-../Header/sauvegarder.h
-D:/GitHub/RPG-UnderGround/Header/sauvegarder.h
+D:/GitHub/RPG-UnderGround/Fonctions/magasin.cpp
 ../Header/magasin.h
 D:/GitHub/RPG-UnderGround/Header/magasin.h
-../Header/combat.h
-D:/GitHub/RPG-UnderGround/Header/combat.h
-../Header/preparation.h
-D:/GitHub/RPG-UnderGround/Header/preparation.h
+../Header/navigation.h
+D:/GitHub/RPG-UnderGround/Header/navigation.h
 iostream
 -
 string
 -
 fstream
 -
-iterator
+time.h
 -
-
-D:/GitHub/RPG-UnderGround/Header/combat.h
+Windows.h
+-
 
 D:/GitHub/RPG-UnderGround/Header/magasin.h
 
 D:/GitHub/RPG-UnderGround/Header/navigation.h
 iterator
--
-
-D:/GitHub/RPG-UnderGround/Header/preparation.h
-
-D:/GitHub/RPG-UnderGround/Header/sauvegarder.h
-iostream
--
-string
 -
 

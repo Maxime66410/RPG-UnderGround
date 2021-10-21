@@ -1,10 +1,9 @@
 Max
-250
-0
+238
+260
 Guerrier
 Humain
 Chomeur
 Epee
-7
-0
-0
+22
+750
